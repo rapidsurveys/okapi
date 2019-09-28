@@ -1,13 +1,13 @@
 Package: odktools
 Type: Package
-Title: Tools for Working with Open Data Kit
+Title: Tools for Working with Open Data Kit in R
 Version: 0.1.0
 Authors@R: person("Ernest", "Guevarra", comment = c(ORCID = "0000-0002-4887-4415"), 
     email = "ernest@guevarra.io", role = c("aut", "cre"))
 Description: Open Data Kit (or ODK for short) is an open-source suite of tools 
     that helps in authoring, collecting, and managing mobile data collection 
     solutions. This package provides tools that help in working with Open Data
-    Kit within R.
+    Kit in R.
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
