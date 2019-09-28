@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# odktools: Tools for Working with Open Data Kit <img src="man/figures/odktools.png" width="200" align="right" />
+# odktools: Tools for Working with Open Data Kit in R <img src="man/figures/odktools.png" width="200" align="right" />
 
 <!-- badges: start -->
 
@@ -15,7 +15,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [Open Data Kit (ODK)](https://opendatakit.org) is an open-source suite
 of tools that helps in authoring, collecting, and managing mobile data
 collection solutions. This package provides tools that help in working
-with [Open Data Kit](https://opendatakit.org) within
+with [Open Data Kit](https://opendatakit.org) in
 [R](https://cran.r-project.org).
 
 ## Installation
