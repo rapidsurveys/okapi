@@ -10,6 +10,8 @@ has not yet been a stable, usable release suitable for the
 public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+![R-CMD-check](https://github.com/rapidsurveys/odktools/workflows/R-CMD-check/badge.svg)
+[![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/odktools/badge)](https://www.codefactor.io/repository/github/rapidsurveys/odktools)
 <!-- badges: end -->
 
 [Open Data Kit (ODK)](https://opendatakit.org) is an open-source suite
