@@ -14,7 +14,7 @@ ona_get_data(base_url = "https://api.ona.io", auth_mode = "token", form_id)
 \item{form_id}{Form identifier.}
 }
 \value{
-A tibble of datasets available to specific user.
+A tibble of retrieved dataset.
 }
 \description{
 Retrieve specific dataset by form ID from specific user
