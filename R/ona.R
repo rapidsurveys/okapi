@@ -3,8 +3,6 @@
 #'
 #' Basic authentication to ONA with a username and password
 #'
-#' Basic authentication to ONA with a username and password
-#'
 #' @param username ONA username.
 #' @param password ONA password. Default is an interactive input of password.
 #'
@@ -105,7 +103,7 @@ ona_list_data <- function(base_url = "https://api.ona.io",
 #' @param auth_mode Password or token? Default is token.
 #' @param form_id Form identifier.
 #'
-#' @return A tibble of datasets available to specific user.
+#' @return A tibble of retrieved dataset.
 #'
 #' @examples
 #' ona_get_data(form_id = 276175)
