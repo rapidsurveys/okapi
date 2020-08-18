@@ -86,7 +86,7 @@ kobo_list_assets <- function(base_url = "https://kf.kobotoolbox.org",
 
   ##
   resp <- httr::GET(url = base_url,
-                    path = "api/v2/assets",
+                    path = "api/v2/assets/",
                     config = config)
 
   ##
