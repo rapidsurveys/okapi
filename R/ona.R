@@ -17,8 +17,10 @@
 ################################################################################
 
 ona_auth_password <- function(username, password = askpass::askpass()) {
-  Sys.setenv("ONA_USERNAME" = username,
-             "ONA_PASSWORD" = password)
+  withr::with_envvar(
+    new = c("ONA_USERNAME" = username, "ONA_PASSWORD" = password),
+    code = Sys.getenv(c("ONA_USERNAME", "ONA_PASSWORD"))
+  )
 }
 
 
@@ -41,7 +43,10 @@ ona_auth_password <- function(username, password = askpass::askpass()) {
 ################################################################################
 
 ona_auth_token <- function(token) {
-  Sys.setenv("ONA_TOKEN" = token)
+  withr::with_envvar(
+    new = c("ONA_TOKEN" = token),
+    code = Sys.getenv("ONA_TOKEN")
+  )
 }
 
 
