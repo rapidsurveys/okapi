@@ -10,6 +10,9 @@
 #' @docType package
 #' @name odktools
 #' @keywords internal
+#' @importFrom httr GET authenticate add_headers
+#' @importFrom tibble tibble
+#' @importFrom jsonlite fromJSON
 #'
 #
 ################################################################################
