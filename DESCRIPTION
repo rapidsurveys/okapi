@@ -13,7 +13,8 @@ License: GPL-3
 Imports: 
     httr,
     tibble,
-    jsonlite
+    jsonlite,
+    withr
 URL: https://github.com/rapidsurveys/odktools
 BugReports: https://github.com/rapidsurveys/odktools/issues
 Encoding: UTF-8
