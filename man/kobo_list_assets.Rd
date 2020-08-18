@@ -5,8 +5,6 @@
 \title{Retrieve list of assets available to specific user}
 \usage{
 kobo_list_assets(base_url = "https://kf.kobotoolbox.org", auth_mode = "token")
-
-kobo_list_assets(base_url = "https://kf.kobotoolbox.org", auth_mode = "token")
 }
 \arguments{
 \item{base_url}{KoBo Toolbox URL. Default is \url{https://kf.kobotoolbox.org}.}
@@ -15,17 +13,12 @@ kobo_list_assets(base_url = "https://kf.kobotoolbox.org", auth_mode = "token")
 }
 \value{
 A list of assets available to specific user.
-
-A list of assets available to specific user.
 }
 \description{
 Retrieve list of assets available to specific user
-
-Retrieve list of assets available to specific user
 }
 \examples{
-kobo_list_assets()
-
+kobo_auth_token(token = "e9b39da128ff1b0bd4366b015c9e8ebad35b5fea")
 kobo_list_assets()
 
 }

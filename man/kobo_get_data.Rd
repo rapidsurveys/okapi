@@ -24,6 +24,7 @@ A tibble of datasets available to specific user.
 Retrieve specific dataset by form ID from specific user
 }
 \examples{
+kobo_auth_token(token = "e9b39da128ff1b0bd4366b015c9e8ebad35b5fea")
 kobo_get_data(asset_id = "aKJTpKiVUcPYim2epKkPvW")
 
 }
