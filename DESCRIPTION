@@ -10,6 +10,10 @@ Description: Open Data Kit (ODK) is an open-source suite of tools
     that helps in authoring, collecting, and managing mobile data collection 
     solutions. This package provides an ODK API client in R.
 License: GPL-3
+Imports: 
+    httr,
+    tibble,
+    jsonlite
 URL: https://github.com/rapidsurveys/odktools
 BugReports: https://github.com/rapidsurveys/odktools/issues
 Encoding: UTF-8
