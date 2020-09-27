@@ -27,7 +27,7 @@ knitr::opts_chunk$set(
 
 You can install the development version of `odktools` from [GitHub](https://github.com/rapidsurveys/odktools) with:
 
-``` r
+```{r instal_github, eval = FALSE}
 if(!require(remotes)) install.packages("remotes")
 remotes::install_github("rapidsurveys/odktools")
 ```
