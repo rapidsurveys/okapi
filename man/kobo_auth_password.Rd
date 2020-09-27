@@ -20,6 +20,6 @@ Basic authentication to KoBo Toolbox with a username and password
 }
 \examples{
 kobo_auth_password(username = "ernestguevarra",
-                      password = "apadana447*")
+                   password = "apadana447*")
 
 }

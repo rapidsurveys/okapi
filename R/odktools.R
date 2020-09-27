@@ -13,7 +13,6 @@
 #' @importFrom httr GET authenticate add_headers
 #' @importFrom tibble tibble
 #' @importFrom jsonlite fromJSON
-#' @importFrom withr with_envvar
 #'
 #
 ################################################################################

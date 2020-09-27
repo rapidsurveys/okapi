@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' kobo_auth_password(username = "ernestguevarra",
-#'                       password = "apadana447*")
+#'                    password = "apadana447*")
 #'
 #' @export
 #'
@@ -19,6 +19,11 @@
 ################################################################################
 
 kobo_auth_password <- function(username, password = askpass::askpass()) {
+  #withr::with_envvar(
+  #  new = c("KOBO_USERNAME" = username,
+  #          "KOBO_PASSWORD" = password),
+  #  code = Sys.getenv(x = c("KOBO_USERNAME", "KOBO_PASSWORD"))
+  #)
   Sys.setenv("KOBO_USERNAME" = username,
              "KOBO_PASSWORD" = password)
 }
@@ -43,6 +48,10 @@ kobo_auth_password <- function(username, password = askpass::askpass()) {
 ################################################################################
 
 kobo_auth_token <- function(token) {
+  #withr::with_envvar(
+  #  new = c("KOBO_TOKEN" = token),
+  #  code = Sys.getenv(x = "KOBO_TOKEN", names = TRUE)
+  #)
   Sys.setenv("KOBO_TOKEN" = token)
 }
 
