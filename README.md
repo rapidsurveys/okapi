@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# odktools: Open Data Kit API client in R <img src="man/figures/odktools.png" width="200" align="right" />
+# okapi: Computer-assisted Personal Interview (CAPI) Tools <img src="man/figures/logo.png" width="200" align="right" />
 
 <!-- badges: start -->
 
@@ -11,23 +11,23 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 ![R-CMD-check](https://github.com/rapidsurveys/odktools/workflows/R-CMD-check/badge.svg)
-[![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/odktools/badge)](https://www.codefactor.io/repository/github/rapidsurveys/odktools)
 <!-- badges: end -->
 
-[Open Data Kit (ODK)](https://opendatakit.org) is an open-source suite
-of tools that helps in authoring, collecting, and managing mobile data
-collection solutions. This package provides an
-[ODK](https://opendatakit.org) API client in
-[R](https://cran.r-project.org).
+Data collection using computer-assisted personal interviewing or CAPI
+tools is now the standard approach for conducting surveys and studies. A
+wide range of CAPI systems are currently being used. The ability to
+interface with these systems helps in the overall data process. This
+package provides interface functions to CAPI systems based on the [Open
+Data Kit or ODK](https://getodk.org) technology.
 
 ## Installation
 
-You can install the development version of `odktools` from
-[GitHub](https://github.com/rapidsurveys/odktools) with:
+You can install the development version of `okapi` from
+[GitHub](https://github.com/rapidsurveys/okapi) with:
 
 ``` r
 if(!require(remotes)) install.packages("remotes")
-remotes::install_github("rapidsurveys/odktools")
+remotes::install_github("rapidsurveys/okapi")
 ```
 
 ## Usage
