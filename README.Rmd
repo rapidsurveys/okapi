@@ -17,10 +17,26 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-![R-CMD-check](https://github.com/rapidsurveys/odktools/workflows/R-CMD-check/badge.svg)
+[![R build status](https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![R build status](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/rapidsurveys/okapi?branch=master&svg=true)](https://ci.appveyor.com/project/rapidsurveys/okapi)
+[![Codecov test coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/master/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
 <!-- badges: end -->
 
 Data collection using computer-assisted personal interviewing or CAPI tools is now the standard approach for conducting surveys and studies. A wide range of CAPI systems are currently being used. The ability to interface with these systems helps in the overall data process. This package provides interface functions to CAPI systems based on the [Open Data Kit or ODK](https://getodk.org) technology.
+
+## The ODK ecosystem
+
+## What does `okapi` do?
+
+Currently, `okapi` provides functions to interface with two ODK-based systems: [ONA](https://getodk.org) and [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The current set of functions perform the following tasks:
+
+1. Authenicate with the respective servers using either an account password or an API token;
+
+2. List resources in the server available to interface with; and,
+
+3. Get data or resources from the server to [R](https://cran.r-project.org).
 
 ## Installation
 

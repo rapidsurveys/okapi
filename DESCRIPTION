@@ -26,4 +26,5 @@ Roxygeon: list(markdown = TRUE)
 URL: https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues
 Suggests: 
-    spelling
+    spelling,
+    covr

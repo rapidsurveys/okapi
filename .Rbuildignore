@@ -5,3 +5,5 @@
 ^\.github$
 ^docs$
 ^pkgdown$
+^appveyor\.yml$
+^codecov\.yml$
