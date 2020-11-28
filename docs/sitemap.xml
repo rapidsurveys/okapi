@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rapidsurveys.io/odktools/index.html</loc>
+    <loc>https://rapidsurveys.io/okapi/index.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/kobo_auth_password.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/kobo_auth_password.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/kobo_auth_token.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/kobo_auth_token.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/kobo_get_data.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/kobo_get_data.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/kobo_list_assets.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/kobo_list_assets.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/odktools.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/odktools.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/ona_auth_password.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_auth_password.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/ona_auth_token.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_auth_token.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/ona_get_data.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_get_data.html</loc>
   </url>
   <url>
-    <loc>https://rapidsurveys.io/odktools/reference/ona_list_data.html</loc>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_list_data.html</loc>
   </url>
 </urlset>
