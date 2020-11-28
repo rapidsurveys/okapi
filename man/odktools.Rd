@@ -2,8 +2,8 @@
 % Please edit documentation in R/odktools.R
 \docType{package}
 \name{odktools}
-\alias{odktools}
-\alias{odktools-package}
+\alias{okapi}
+\alias{okapi-package}
 \title{Open Data Kit API client in R}
 \description{
 Open Data Kit (ODK) is an open-source suite of tools that helps in authoring,
@@ -13,8 +13,8 @@ provides an ODK API client in R.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/rapidsurveys/odktools}
-  \item Report bugs at \url{https://github.com/rapidsurveys/odktools/issues}
+  \item \url{https://github.com/rapidsurveys/okapi}
+  \item Report bugs at \url{https://github.com/rapidsurveys/okapi/issues}
 }
 
 }
