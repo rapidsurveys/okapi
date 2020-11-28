@@ -1,22 +1,29 @@
-Package: odktools
+Package: okapi
 Type: Package
-Title: Open Data Kit API Client in R
+Title: Computer-assisted Personal Interviewing (CAPI) Tools
 Version: 0.1.0
-Authors@R: person("Ernest", "Guevarra", 
-    comment = c(ORCID = "0000-0002-4887-4415"), 
-    email = "ernest@guevarra.io", 
-    role = c("aut", "cre"))
-Description: Open Data Kit (ODK) is an open-source suite of tools 
-    that helps in authoring, collecting, and managing mobile data collection 
-    solutions. This package provides an ODK API client in R.
+Authors@R: person(given = "Ernest", 
+                  family = "Guevarra", 
+                  comment = c(ORCID = "0000-0002-4887-4415"), 
+                  email = "ernest@guevarra.io", 
+                  role = c("aut", "cre"))
+Description: Data collection using computer-assisted personal
+    interviewing or CAPI tools is now the standard approach for conducting
+    surveys and studies. A wide range of CAPI systems are currently being used.
+    The ability to interface with these systems helps in the overall data
+    process. This package provides interface functions to CAPI systems based on
+    the Open Data Kit or ODK technology.
 License: GPL-3
 Imports: 
     httr,
     tibble,
     jsonlite
-URL: https://github.com/rapidsurveys/odktools
-BugReports: https://github.com/rapidsurveys/odktools/issues
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
 RoxygenNote: 7.1.1
+Roxygeon: list(markdown = TRUE)
+URL: https://github.com/rapidsurveys/okapi
+BugReports: https://github.com/rapidsurveys/okapi/issues
+Suggests: 
+    spelling
