@@ -27,5 +27,5 @@ Language: en-GB
 LazyData: true
 RoxygenNote: 7.1.1
 Roxygeon: list(markdown = TRUE)
-URL: https://github.com/rapidsurveys/okapi
+URL: https://rapidsurveys.io/okapi/, https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues
