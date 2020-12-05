@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# okapi: Computer-assisted Personal Interview (CAPI) Tools <img src="man/figures/logo.png" width="200" align="right" />
+# okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools <img src="man/figures/logo.png" width="200" align="right" />
 
 <!-- badges: start -->
 
@@ -37,7 +37,7 @@ systems: [ONA](https://getodk.org) and
 [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The
 current set of functions perform the following tasks:
 
-1.  Authenicate with the respective servers using either an account
+1.  Authenticate with the respective servers using either an account
     password or an API token;
 
 2.  List resources in the server available to interface with; and,
@@ -46,6 +46,15 @@ current set of functions perform the following tasks:
     [R](https://cran.r-project.org).
 
 ## Installation
+
+<!---
+You can install `okapi` from [CRAN](https://cran.r-project.org):
+
+
+```r
+install.packages("okapi")
+```
+--->
 
 You can install the development version of `okapi` from
 [GitHub](https://github.com/rapidsurveys/okapi) with:
@@ -56,3 +65,15 @@ remotes::install_github("rapidsurveys/okapi")
 ```
 
 ## Usage
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or
+seek support [here](https://github.com/rapidsurveysh/okapi/issues). If
+you would like to contribute to the package, please see our
+[contributing
+guidelines](https://rapidsurveys.io/okapi/CONTRIBUTING.html).
+
+This project is released with a [Contributor Code of
+Conduct](https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html). By
+participating in this project you agree to abide by its terms.

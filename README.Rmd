@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# okapi: Computer-assisted Personal Interview (CAPI) Tools <img src="man/figures/logo.png" width="200" align="right" />
+# okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools <img src="man/figures/logo.png" width="200" align="right" />
 
 <!-- badges: start -->
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
@@ -32,13 +32,21 @@ Data collection using computer-assisted personal interviewing or CAPI tools is n
 
 Currently, `okapi` provides functions to interface with two ODK-based systems: [ONA](https://getodk.org) and [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The current set of functions perform the following tasks:
 
-1. Authenicate with the respective servers using either an account password or an API token;
+1. Authenticate with the respective servers using either an account password or an API token;
 
 2. List resources in the server available to interface with; and,
 
 3. Get data or resources from the server to [R](https://cran.r-project.org).
 
 ## Installation
+
+<!---
+You can install `okapi` from [CRAN](https://cran.r-project.org):
+
+```{r install_cran, eval = FALSE}
+install.packages("okapi")
+```
+--->
 
 You can install the development version of `okapi` from [GitHub](https://github.com/rapidsurveys/okapi) with:
 
@@ -48,3 +56,10 @@ remotes::install_github("rapidsurveys/okapi")
 ```
 
 ## Usage
+
+
+## Community guidelines
+
+Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/rapidsurveysh/okapi/issues). If you would like to contribute to the package, please see our [contributing guidelines](https://rapidsurveys.io/okapi/CONTRIBUTING.html).
+
+This project is released with a [Contributor Code of Conduct](https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.
