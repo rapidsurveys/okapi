@@ -4,7 +4,10 @@
 \alias{ona_list_data}
 \title{Retrieve list of datasets available to specific user}
 \usage{
-ona_list_data(base_url = "https://api.ona.io", auth_mode = "token")
+ona_list_data(
+  base_url = "https://api.ona.io",
+  auth_mode = c("token", "password")
+)
 }
 \arguments{
 \item{base_url}{ONA URL. Default is \url{https://api.ona.io}.}
