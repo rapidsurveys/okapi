@@ -3,26 +3,32 @@ url: https://rapidsurveys.io/okapi
 template:
   params:
     bootswatch: united
-    #ganalytics: UA-102485058-4
+    ganalytics:
 
-#home:
-  #strip_header: true
-#  links:
-#  - text: Read more about the WHO Growth Standards
-#    href: https://www.who.int/childgrowth/en/
-#
-#  - text: Read more about MUAC-for-age z-scores development
-#    href: https://doi.org/10.1136/bmj.j3423
+navbar:
+  type: inverse
+
+home:
+  links:
+  - text: Read more about Open Data Kit
+    href: https://getodk.org
+
+  - text: Read more about ONA
+    href: https://ona.io
+
+  - text: Read more about KoboToolbox
+    href: https://www.kobotoolbox.org
 
 reference:
-- title: Description
-  contents:
-  - odktools
+  - title: Description
+    contents:
+    - okapi
 
-- title: ONA API
-  contents:
-  - starts_with("ona")
+  - title: ONA API
+    contents:
+    - starts_with("ona")
 
-- title: KoBo Toolbox API
-  contents:
-  - starts_with("kobo")
+  - title: KoBo Toolbox API
+    contents:
+    - starts_with("kobo")
+

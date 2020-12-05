@@ -14,6 +14,11 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
 [![R build
 status](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![AppVeyor build
+status](https://ci.appveyor.com/api/projects/status/github/rapidsurveys/okapi?branch=master&svg=true)](https://ci.appveyor.com/project/rapidsurveys/okapi)
+[![Codecov test
+coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/master/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=master)
+[![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
 <!-- badges: end -->
 
 Data collection using computer-assisted personal interviewing or CAPI
@@ -26,6 +31,23 @@ Data Kit or ODK](https://getodk.org) technology.
 ## Motivation and development history
 
 ## What does `okapi` do?
+
+## The ODK ecosystem
+
+## What does `okapi` do?
+
+Currently, `okapi` provides functions to interface with two ODK-based
+systems: [ONA](https://getodk.org) and
+[KoboToolbox](https://kobotoolbox.org) via their respective APIs. The
+current set of functions perform the following tasks:
+
+1.  Authenicate with the respective servers using either an account
+    password or an API token;
+
+2.  List resources in the server available to interface with; and,
+
+3.  Get data or resources from the server to
+    [R](https://cran.r-project.org).
 
 ## Installation
 

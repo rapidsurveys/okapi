@@ -32,7 +32,7 @@
 </head>
 <body data-spy="scroll" data-target="#toc">
     <div class="container template-home">
-      <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <header><div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
@@ -93,6 +93,20 @@
 <h2 class="hasAnchor">
 <a href="#what-does-okapi-do" class="anchor"></a>What does <code>okapi</code> do?</h2>
 </div>
+<div id="the-odk-ecosystem" class="section level2">
+<h2 class="hasAnchor">
+<a href="#the-odk-ecosystem" class="anchor"></a>The ODK ecosystem</h2>
+</div>
+<div id="what-does-okapi-do-1" class="section level2">
+<h2 class="hasAnchor">
+<a href="#what-does-okapi-do-1" class="anchor"></a>What does <code>okapi</code> do?</h2>
+<p>Currently, <code>okapi</code> provides functions to interface with two ODK-based systems: <a href="https://getodk.org">ONA</a> and <a href="https://kobotoolbox.org">KoboToolbox</a> via their respective APIs. The current set of functions perform the following tasks:</p>
+<ol>
+<li><p>Authenicate with the respective servers using either an account password or an API token;</p></li>
+<li><p>List resources in the server available to interface with; and,</p></li>
+<li><p>Get data or resources from the server to <a href="https://cran.r-project.org">R</a>.</p></li>
+</ol>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -130,6 +144,12 @@ install.packages("okapi")
 </li>
 <li>Report a bug at <br><a href="https://github.com/rapidsurveys/okapi/issues">https://​github.com/​rapidsurveys/​okapi/​issues</a>
 </li>
+<li>Read more about Open Data Kit at <br><a href="https://getodk.org">https://​getodk.org</a>
+</li>
+<li>Read more about ONA at <br><a href="https://ona.io">https://​ona.io</a>
+</li>
+<li>Read more about KoboToolbox at <br><a href="https://www.kobotoolbox.org">https://​www.kobotoolbox.org</a>
+</li>
 </ul>
 </div>
 <div class="license">
@@ -160,6 +180,9 @@ install.packages("okapi")
 <li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 <li><a href="https://github.com/rapidsurveys/okapi/actions"><img src="https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 <li><a href="https://github.com/rapidsurveys/okapi/actions"><img src="https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg" alt="R build status"></a></li>
+<li><a href="https://ci.appveyor.com/project/rapidsurveys/okapi"><img src="https://ci.appveyor.com/api/projects/status/github/rapidsurveys/okapi?branch=master&amp;svg=true" alt="AppVeyor build status"></a></li>
+<li><a href="https://codecov.io/gh/rapidsurveys/okapi?branch=master"><img src="https://codecov.io/gh/rapidsurveys/okapi/branch/master/graph/badge.svg" alt="Codecov test coverage"></a></li>
+<li><a href="https://www.codefactor.io/repository/github/rapidsurveys/okapi"><img src="https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge" alt="CodeFactor"></a></li>
 </ul>
 </div>
 </div>
