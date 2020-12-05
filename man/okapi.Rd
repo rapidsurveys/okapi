@@ -16,6 +16,7 @@ technology.
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://rapidsurveys.io/okapi/}
   \item \url{https://github.com/rapidsurveys/okapi}
   \item Report bugs at \url{https://github.com/rapidsurveys/okapi/issues}
 }
