@@ -25,6 +25,10 @@ interface with these systems helps in the overall data process. This
 package provides interface functions to CAPI systems based on the [Open
 Data Kit or ODK](https://getodk.org) technology.
 
+## Motivation and development history
+
+## What does `okapi` do?
+
 ## The ODK ecosystem
 
 ## What does `okapi` do?
@@ -66,7 +70,7 @@ remotes::install_github("rapidsurveys/okapi")
 ## Community guidelines
 
 Feedback, bug reports and feature requests are welcome; file issues or
-seek support [here](https://github.com/rapidsurveysh/okapi/issues). If
+seek support [here](https://github.com/rapidsurveys/okapi/issues). If
 you would like to contribute to the package, please see our
 [contributing
 guidelines](https://rapidsurveys.io/okapi/CONTRIBUTING.html).
