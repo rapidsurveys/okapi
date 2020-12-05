@@ -1,6 +1,7 @@
 Package: okapi
 Type: Package
-Title: Computer-assisted Personal Interviewing (CAPI) Tools
+Title: Open Data Kit (ODK)-based Computer-assisted Personal Interviewing (CAPI) 
+  Tools
 Version: 0.1.0
 Authors@R: person(given = "Ernest", 
                   family = "Guevarra", 
@@ -18,6 +19,9 @@ Imports:
     httr,
     tibble,
     jsonlite
+Suggests: 
+    spelling,
+    covr
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
@@ -25,6 +29,3 @@ RoxygenNote: 7.1.1
 Roxygeon: list(markdown = TRUE)
 URL: https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues
-Suggests: 
-    spelling,
-    covr
