@@ -19,11 +19,6 @@
 ################################################################################
 
 kobo_auth_password <- function(username, password = askpass::askpass()) {
-  #withr::with_envvar(
-  #  new = c("KOBO_USERNAME" = username,
-  #          "KOBO_PASSWORD" = password),
-  #  code = Sys.getenv(x = c("KOBO_USERNAME", "KOBO_PASSWORD"))
-  #)
   Sys.setenv("KOBO_USERNAME" = username,
              "KOBO_PASSWORD" = password)
 }
@@ -48,10 +43,6 @@ kobo_auth_password <- function(username, password = askpass::askpass()) {
 ################################################################################
 
 kobo_auth_token <- function(token) {
-  #withr::with_envvar(
-  #  new = c("KOBO_TOKEN" = token),
-  #  code = Sys.getenv(x = "KOBO_TOKEN", names = TRUE)
-  #)
   Sys.setenv("KOBO_TOKEN" = token)
 }
 
@@ -79,7 +70,7 @@ kobo_auth_token <- function(token) {
 kobo_list_assets <- function(base_url = "https://kf.kobotoolbox.org",
                              auth_mode = "token") {
   ##
-  if(auth_mode == "password") {
+  if (auth_mode == "password") {
     config <- httr::authenticate(user = Sys.getenv(x = "KOBO_USERNAME"),
                                  password = Sys.getenv(x = "KOBO_PASSWORD"))
   } else {
@@ -131,7 +122,7 @@ kobo_get_data <- function(base_url = "https://kf.kobotoolbox.org",
                           auth_mode = "token",
                           asset_id) {
   ##
-  if(auth_mode == "password") {
+  if (auth_mode == "password") {
     config <- httr::authenticate(user = Sys.getenv(x = "KOBO_USERNAME"),
                                  password = Sys.getenv(x = "KOBO_PASSWORD"))
   } else {

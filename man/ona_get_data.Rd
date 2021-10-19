@@ -4,7 +4,11 @@
 \alias{ona_get_data}
 \title{Retrieve specific dataset by form ID from specific user}
 \usage{
-ona_get_data(base_url = "https://api.ona.io", auth_mode = "token", form_id)
+ona_get_data(
+  base_url = "https://api.ona.io",
+  auth_mode = c("token", "password"),
+  form_id
+)
 }
 \arguments{
 \item{base_url}{ONA URL. Default is \url{https://api.ona.io}.}

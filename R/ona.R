@@ -9,19 +9,16 @@
 #' @return System environment variables for ONA_USERNAME and ONA_PASSWORD
 #'
 #' @examples
-#' ona_auth_password(username = "validtrial", password = "zEF-STN-5ze-qom")
+#' ona_auth_password(username = "validtrial",
+#'                   password = Sys.getenv("ONA_PASSWORD"))
 #'
 #' @export
 #'
 #
 ################################################################################
 
-ona_auth_password <- function(username, password = askpass::askpass()) {
-  #withr::with_envvar(
-  #  new = c("ONA_USERNAME" = username,
-  #          "ONA_PASSWORD" = password),
-  #  code = Sys.getenv(x = c("ONA_USERNAME", "ONA_PASSWORD"))
-  #)
+ona_auth_password <- function(username,
+                              password = askpass::askpass()) {
   Sys.setenv("ONA_USERNAME" = username,
              "ONA_PASSWORD" = password)
 }
@@ -37,7 +34,7 @@ ona_auth_password <- function(username, password = askpass::askpass()) {
 #' @return System environment variables for ONA_TOKEN
 #'
 #' @examples
-#' ona_auth_token(token = "a0cdd8bcb01ccf26092f7e14309ce8a77ad38d87")
+#' ona_auth_token(token = Sys.getenv("ONA_TOKEN"))
 #'
 #' @export
 #'
@@ -46,10 +43,6 @@ ona_auth_password <- function(username, password = askpass::askpass()) {
 ################################################################################
 
 ona_auth_token <- function(token) {
-  #withr::with_envvar(
-  #  new = c("ONA_TOKEN" = token),
-  #  code = Sys.getenv(x = "ONA_TOKEN", names = TRUE)
-  #)
   Sys.setenv("ONA_TOKEN" = token)
 }
 
@@ -74,9 +67,9 @@ ona_auth_token <- function(token) {
 ################################################################################
 
 ona_list_data <- function(base_url = "https://api.ona.io",
-                          auth_mode = "token") {
+                          auth_mode = c("token", "password")) {
   ##
-  if(auth_mode == "password") {
+  if (match.arg(auth_mode) == "password") {
     config <- httr::authenticate(user = Sys.getenv(x = "ONA_USERNAME"),
                                  password = Sys.getenv(x = "ONA_PASSWORD"))
   } else {
@@ -124,10 +117,10 @@ ona_list_data <- function(base_url = "https://api.ona.io",
 ################################################################################
 
 ona_get_data <- function(base_url = "https://api.ona.io",
-                         auth_mode = "token",
+                         auth_mode = c("token", "password"),
                          form_id) {
   ##
-  if(auth_mode == "password") {
+  if (match.arg(auth_mode) == "password") {
     config <- httr::authenticate(user = Sys.getenv(x = "ONA_USERNAME"),
                                  password = Sys.getenv(x = "ONA_PASSWORD"))
   } else {

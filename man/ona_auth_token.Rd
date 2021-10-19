@@ -16,6 +16,6 @@ System environment variables for ONA_TOKEN
 Basic authentication to ONA with API authentication token
 }
 \examples{
-ona_auth_token(token = "a0cdd8bcb01ccf26092f7e14309ce8a77ad38d87")
+ona_auth_token(token = Sys.getenv("ONA_TOKEN"))
 
 }
