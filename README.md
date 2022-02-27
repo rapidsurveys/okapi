@@ -7,12 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R build
-status](https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
-[![AppVeyor build
-status](https://ci.appveyor.com/api/projects/status/github/rapidsurveys/okapi?branch=master&svg=true)](https://ci.appveyor.com/project/rapidsurveys/okapi)
-[![R build
-status](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![R-CMD-check](https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![test-coverage](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/master/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=master)
 [![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)

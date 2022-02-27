@@ -1,5 +1,6 @@
 AppVeyor
 CAPI
+CMD
 CodeFactor
 Codecov
 KF
@@ -10,5 +11,7 @@ Lifecycle
 ODK
 ONA
 ORCID
-WIP
+XLSForm
+dataentry
+readonly
 tibble
