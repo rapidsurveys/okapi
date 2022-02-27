@@ -9,7 +9,7 @@
 #' @return A tibble of datasets available to specific user.
 #'
 #' @examples
-#' ona_list_data()
+#' ona_data_list()
 #'
 #' @export
 #'
@@ -17,7 +17,7 @@
 #
 ################################################################################
 
-ona_list_data <- function(base_url = "https://api.ona.io",
+ona_data_list <- function(base_url = "https://api.ona.io",
                           auth_mode = c("token", "password")) {
   ## Get authentication mode
   auth_mode <- match.arg(auth_mode)
@@ -26,11 +26,15 @@ ona_list_data <- function(base_url = "https://api.ona.io",
   config <- ona_configure(auth_mode = auth_mode)
 
   ## Apply GET
-  resp <- httr::GET(url = base_url, path = "api/v1/data", config = config)
+  response <- httr::GET(
+    url = base_url,
+    path = "api/v1/data",
+    config = config
+  )
 
   ## Read JSON
   x <- jsonlite::fromJSON(
-    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+    txt = httr::content(x = response, as = "text", encoding = "UTF-8")
   )
 
   ## Convert output to tibble
@@ -53,7 +57,7 @@ ona_list_data <- function(base_url = "https://api.ona.io",
 #' @return A tibble of retrieved dataset.
 #'
 #' @examples
-#' ona_get_data(form_id = 276175)
+#' ona_data_get(form_id = 276175)
 #'
 #' @export
 #'
@@ -61,7 +65,7 @@ ona_list_data <- function(base_url = "https://api.ona.io",
 #
 ################################################################################
 
-ona_get_data <- function(base_url = "https://api.ona.io",
+ona_data_get <- function(base_url = "https://api.ona.io",
                          auth_mode = c("token", "password"),
                          form_id) {
   ## Get authentication mode
@@ -73,7 +77,8 @@ ona_get_data <- function(base_url = "https://api.ona.io",
   ## Apply GET
   resp <- httr::GET(
     url = base_url,
-    path = paste("api/v1/data", form_id, sep = "/"), config = config
+    path = paste("api/v1/data", form_id, sep = "/"),
+    config = config
   )
 
   ## Read JSON

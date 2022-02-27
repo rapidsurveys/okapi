@@ -1,4 +1,3 @@
-AppVeyor
 CAPI
 CMD
 CodeFactor
@@ -11,7 +10,9 @@ Lifecycle
 ODK
 ONA
 ORCID
+Sys
 XLSForm
 dataentry
+getenv
 readonly
 tibble

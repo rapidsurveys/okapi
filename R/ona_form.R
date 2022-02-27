@@ -9,7 +9,7 @@
 #' @return A tibble of published forms.
 #'
 #' @examples
-#' ona_list_forms()
+#' ona_form_list()
 #'
 #' @export
 #'
@@ -17,8 +17,8 @@
 #
 ################################################################################
 
-ona_list_forms <- function(base_url = "https://api.ona.io",
-                           auth_mode = c("token", "password")) {
+ona_form_list <- function(base_url = "https://api.ona.io",
+                          auth_mode = c("token", "password")) {
   ## Get authentication mode
   auth_mode <- match.arg(auth_mode)
 
@@ -58,10 +58,12 @@ ona_list_forms <- function(base_url = "https://api.ona.io",
 #' @return A published form on ONA.
 #'
 #' @examples
-#' ona_publish_form(
+#' ona_project_register(name = "test")
+#' ona_form_publish(
 #'   xls_file = system.file(
 #'     "appearance_widgets.xlsx", package = "okapi"
-#'   )
+#'   ),
+#'   project_id = ona_project_list()[["projectid"]]
 #' )
 #'
 #' @export
@@ -70,7 +72,7 @@ ona_list_forms <- function(base_url = "https://api.ona.io",
 #
 ################################################################################
 
-ona_publish_form <- function(base_url = "https://api.ona.io",
+ona_form_publish <- function(base_url = "https://api.ona.io",
                              auth_mode = c("token", "password"),
                              xls_file = NULL,
                              xls_url = NULL,
@@ -96,20 +98,28 @@ ona_publish_form <- function(base_url = "https://api.ona.io",
 
   ## Apply POST
   if (is.null(project_id)) {
-    httr::POST(
+    json <- httr::POST(
       url = base_url,
       config = config,
       path = "api/v1/forms",
       body = .body
     )
   } else {
-    httr::POST(
+    json <- httr::POST(
       url = base_url,
       config = config,
       path = paste("api/v1/projects", project_id, "forms", sep = "/"),
       body = .body
     )
   }
+
+  ## Read json
+  x <- jsonlite::fromJSON(
+    txt = httr::content(x = json, as = "text", encoding = "UTF-8")
+  )
+
+  ## Return json content
+  x
 }
 
 
@@ -125,7 +135,9 @@ ona_publish_form <- function(base_url = "https://api.ona.io",
 #' @return Delete specified form from ONA.
 #'
 #' @examples
-#' ona_delete_form(form_id = 647324)
+#' form_list <- ona_form_list()
+#' form_id <- form_list[["formid"]][form_list[["title"]] == "Appearance Widgets"]
+#' ona_form_delete(form_id = form_id)
 #'
 #' @export
 #'
@@ -133,9 +145,9 @@ ona_publish_form <- function(base_url = "https://api.ona.io",
 #
 ################################################################################
 
-ona_delete_form <- function(base_url = "https://api.ona.io",
+ona_form_delete <- function(base_url = "https://api.ona.io",
                             auth_mode = c("token", "password"),
-                            form_id) {
+                            form_id = NULL) {
   ##
   auth_mode <- match.arg(auth_mode)
 
@@ -147,6 +159,6 @@ ona_delete_form <- function(base_url = "https://api.ona.io",
     url = base_url,
     config = config,
     path = paste("api/v1/forms", form_id, sep = "/"),
-    body = FALSE
+    body = NULL
   )
 }
