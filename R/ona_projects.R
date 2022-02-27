@@ -102,9 +102,11 @@ ona_project_info <- function(base_url = "https://api.ona.io",
 #' @param auth_mode Password or token? Default is token.
 #' @param project_id Project identifier.
 #' @param username A character value or vector of username/s of user/s to share
-#'   a form with
+#'   a form with.
 #' @param role A character value for the role the user/s will have on the
 #'   project. This can be *readonly*, *dataentry*, *editor*, or *manager*.
+#' @param email Email message to send to user/s to whom project has been
+#'   shared with. If NULL (default), user/s will not be notified.
 #'
 #' @return Invisible. Project shared with specified users with specified
 #'   roles. A tibble of project information.
@@ -127,7 +129,8 @@ ona_share_project <- function(base_url = "https://api.ona.io",
                               project_id = NULL,
                               username = NULL,
                               role = c("readonly", "dataentry",
-                                       "editor", "manager")) {
+                                       "editor", "manager"),
+                              email = NULL) {
   ## Get authentication mode
   auth_mode <- match.arg(auth_mode)
 
@@ -138,13 +141,23 @@ ona_share_project <- function(base_url = "https://api.ona.io",
   role <- match.arg(role)
 
   ## Apply PUT
-  httr::PUT(
-    url = base_url,
-    path = paste("api/v1/projects", project_id, "share", sep = "/"),
-    config = config,
-    body = list(username = username, role = role),
-    encoding = "json"
-  )
+  if (is.null(email)) {
+    httr::PUT(
+      url = base_url,
+      path = paste("api/v1/projects", project_id, "share", sep = "/"),
+      config = config,
+      body = list(username = username, role = role),
+      encoding = "json"
+    )
+  } else {
+    httr::PUT(
+      url = base_url,
+      path = paste("api/v1/projects", project_id, "share", sep = "/"),
+      config = config,
+      body = list(username = username, role = role, email_msg = email),
+      encoding = "json"
+    )
+  }
 
   ## Get project info
   project_info <- ona_project_info(project_id = project_id)
@@ -162,3 +175,6 @@ ona_share_project <- function(base_url = "https://api.ona.io",
   ## Return output
   x
 }
+
+
+

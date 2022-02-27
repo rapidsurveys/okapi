@@ -9,7 +9,8 @@ ona_publish_form(
   auth_mode = c("token", "password"),
   xls_file = NULL,
   xls_url = NULL,
-  dropbox_xls_url = NULL
+  dropbox_xls_url = NULL,
+  project_id = NULL
 )
 }
 \arguments{
@@ -22,6 +23,10 @@ ona_publish_form(
 \item{xls_url}{URL to the XLSForm file.}
 
 \item{dropbox_xls_url}{Dropbox URL to the XLSForm file.}
+
+\item{project_id}{Project identifier of project to publish XLSForm to.
+If NULL (default), XLSForm is published to the an account's default
+project.}
 }
 \value{
 A published form on ONA.

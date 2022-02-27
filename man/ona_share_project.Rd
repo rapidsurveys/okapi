@@ -9,7 +9,8 @@ ona_share_project(
   auth_mode = c("token", "password"),
   project_id = NULL,
   username = NULL,
-  role = c("readonly", "dataentry", "editor", "manager")
+  role = c("readonly", "dataentry", "editor", "manager"),
+  email = NULL
 )
 }
 \arguments{
@@ -20,10 +21,13 @@ ona_share_project(
 \item{project_id}{Project identifier.}
 
 \item{username}{A character value or vector of username/s of user/s to share
-a form with}
+a form with.}
 
 \item{role}{A character value for the role the user/s will have on the
 project. This can be *readonly*, *dataentry*, *editor*, or *manager*.}
+
+\item{email}{Email message to send to user/s to whom project has been
+shared with. If NULL (default), user/s will not be notified.}
 }
 \value{
 Invisible. Project shared with specified users with specified
