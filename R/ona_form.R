@@ -51,6 +51,9 @@ ona_list_forms <- function(base_url = "https://api.ona.io",
 #' @param xls_file Path to the XLSForm file.
 #' @param xls_url URL to the XLSForm file.
 #' @param dropbox_xls_url Dropbox URL to the XLSForm file.
+#' @param project_id Project identifier of project to publish XLSForm to.
+#'   If NULL (default), XLSForm is published to the an account's default
+#'   project.
 #'
 #' @return A published form on ONA.
 #'
@@ -71,7 +74,8 @@ ona_publish_form <- function(base_url = "https://api.ona.io",
                              auth_mode = c("token", "password"),
                              xls_file = NULL,
                              xls_url = NULL,
-                             dropbox_xls_url = NULL) {
+                             dropbox_xls_url = NULL,
+                             project_id = NULL) {
   ##
   auth_mode <- match.arg(auth_mode)
 
@@ -91,12 +95,21 @@ ona_publish_form <- function(base_url = "https://api.ona.io",
   }
 
   ## Apply POST
-  httr::POST(
-    url = base_url,
-    config = config,
-    path = "api/v1/forms",
-    body = .body
-  )
+  if (is.null(project_id)) {
+    httr::POST(
+      url = base_url,
+      config = config,
+      path = "api/v1/forms",
+      body = .body
+    )
+  } else {
+    httr::POST(
+      url = base_url,
+      config = config,
+      path = paste("api/v1/projects", project_id, "forms", sep = "/"),
+      body = .body
+    )
+  }
 }
 
 
