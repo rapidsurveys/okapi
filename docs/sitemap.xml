@@ -49,7 +49,22 @@
     <loc>https://rapidsurveys.io/okapi/reference/ona_configure.html</loc>
   </url>
   <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_data_get.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_data_list.html</loc>
+  </url>
+  <url>
     <loc>https://rapidsurveys.io/okapi/reference/ona_delete_form.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_form_delete.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_form_list.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_form_publish.html</loc>
   </url>
   <url>
     <loc>https://rapidsurveys.io/okapi/reference/ona_get_data.html</loc>
@@ -64,7 +79,19 @@
     <loc>https://rapidsurveys.io/okapi/reference/ona_list_projects.html</loc>
   </url>
   <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_project_delete.html</loc>
+  </url>
+  <url>
     <loc>https://rapidsurveys.io/okapi/reference/ona_project_info.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_project_list.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_project_register.html</loc>
+  </url>
+  <url>
+    <loc>https://rapidsurveys.io/okapi/reference/ona_project_share.html</loc>
   </url>
   <url>
     <loc>https://rapidsurveys.io/okapi/reference/ona_publish_form.html</loc>

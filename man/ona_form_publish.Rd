@@ -10,7 +10,8 @@ ona_form_publish(
   xls_file = NULL,
   xls_url = NULL,
   dropbox_xls_url = NULL,
-  project_id = NULL
+  project_id = NULL,
+  public = FALSE
 )
 }
 \arguments{
@@ -27,6 +28,8 @@ ona_form_publish(
 \item{project_id}{Project identifier of project to publish XLSForm to.
 If NULL (default), XLSForm is published to the an account's default
 project.}
+
+\item{public}{Logical. Should the form be public? Default to FALSE.}
 }
 \value{
 A published form on ONA.

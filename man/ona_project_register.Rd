@@ -8,7 +8,8 @@ ona_project_register(
   base_url = "https://api.ona.io",
   auth_mode = c("token", "password"),
   owner = Sys.getenv("ONA_USERNAME"),
-  name = NULL
+  name = NULL,
+  public = TRUE
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ admin user.}
 \item{name}{Name of the project. If NULL (default), project is given a
 default name similar to that created by ONA for forms published without
 a project}
+
+\item{public}{Logical. Should the project be public? Default to TRUE.}
 }
 \value{
 Invisible. Project registered and created in ONA account
