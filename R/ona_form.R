@@ -54,6 +54,7 @@ ona_form_list <- function(base_url = "https://api.ona.io",
 #' @param project_id Project identifier of project to publish XLSForm to.
 #'   If NULL (default), XLSForm is published to the an account's default
 #'   project.
+#' @param public Logical. Should the form be public? Default to FALSE.
 #'
 #' @return A published form on ONA.
 #'
@@ -77,7 +78,8 @@ ona_form_publish <- function(base_url = "https://api.ona.io",
                              xls_file = NULL,
                              xls_url = NULL,
                              dropbox_xls_url = NULL,
-                             project_id = NULL) {
+                             project_id = NULL,
+                             public = FALSE) {
   ##
   auth_mode <- match.arg(auth_mode)
 
@@ -87,12 +89,12 @@ ona_form_publish <- function(base_url = "https://api.ona.io",
   ## Create body
   if (!is.null(xls_file)) {
     x <- httr::upload_file(xls_file)
-    .body <- list(xls_file = x)
+    .body <- list(xls_file = x, public = public)
   } else {
     if (!is.null(xls_url) & is.null(dropbox_xls_url)) {
-      .body <- list(xls_url = xls_url)
+      .body <- list(xls_url = xls_url, public = public)
     } else {
-      .body <- list(dropbox_xls_url = dropbox_xls_url)
+      .body <- list(dropbox_xls_url = dropbox_xls_url, public = public)
     }
   }
 

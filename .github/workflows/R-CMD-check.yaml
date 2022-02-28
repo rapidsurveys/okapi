@@ -27,6 +27,9 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
+      ONA_USERNAME: okapi_bot
+      ONA_PASSWORD: ${{ secrets.ONA_PASSWORD }}
+      ONA_TOKEN: ${{ secrets.ONA_TOKEN }}
 
     steps:
       - uses: actions/checkout@v2

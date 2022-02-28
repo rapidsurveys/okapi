@@ -13,6 +13,7 @@
 #' @param name Name of the project. If NULL (default), project is given a
 #'   default name similar to that created by ONA for forms published without
 #'   a project
+#' @param public Logical. Should the project be public? Default to TRUE.
 #'
 #' @return Invisible. Project registered and created in ONA account
 #'
@@ -28,7 +29,8 @@
 ona_project_register <- function(base_url = "https://api.ona.io",
                                  auth_mode = c("token", "password"),
                                  owner = Sys.getenv("ONA_USERNAME"),
-                                 name = NULL) {
+                                 name = NULL,
+                                 public = TRUE) {
   ## Get authentication mode
   auth_mode <- match.arg(auth_mode)
 
@@ -59,7 +61,8 @@ ona_project_register <- function(base_url = "https://api.ona.io",
   ## Create body to POST
   .body <- list(
     owner = paste(base_url, "api/v1/users", owner, sep = "/"),
-    name = name
+    name = name,
+    public = public
   )
 
   ## Apply POST
@@ -143,7 +146,7 @@ ona_project_list <- function(base_url = "https://api.ona.io",
   config <- ona_configure(auth_mode = auth_mode)
 
   ## Apply GET
-  resp <- httr::GET(
+  response <- httr::GET(
     url = base_url,
     path = "api/v1/projects",
     config = config
@@ -151,7 +154,7 @@ ona_project_list <- function(base_url = "https://api.ona.io",
 
   ## Read JSON
   x <- jsonlite::fromJSON(
-    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+    txt = httr::content(x = response, as = "text", encoding = "UTF-8")
   )
 
   ## Convert output to tibble
@@ -192,14 +195,14 @@ ona_project_info <- function(base_url = "https://api.ona.io",
   config <- ona_configure(auth_mode = auth_mode)
 
   ## Apply GET
-  resp <- httr::GET(
+  response <- httr::GET(
     url = base_url,
     path = paste("api/v1/projects", project_id, sep = "/"),
     config = config)
 
   ## Read JSON
   x <- jsonlite::fromJSON(
-    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+    txt = httr::content(x = response, as = "text", encoding = "UTF-8")
   )
 
   ## Convert output to tibble
@@ -259,7 +262,7 @@ ona_project_share <- function(base_url = "https://api.ona.io",
 
   ## Apply PUT
   if (is.null(email)) {
-    httr::PUT(
+    response <- httr::PUT(
       url = base_url,
       path = paste("api/v1/projects", project_id, "share", sep = "/"),
       config = config,
@@ -267,7 +270,7 @@ ona_project_share <- function(base_url = "https://api.ona.io",
       encoding = "json"
     )
   } else {
-    httr::PUT(
+    response <- httr::PUT(
       url = base_url,
       path = paste("api/v1/projects", project_id, "share", sep = "/"),
       config = config,
