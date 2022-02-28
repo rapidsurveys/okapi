@@ -26,9 +26,22 @@ reference:
     contents:
     - okapi
 
-  - title: ONA API
+  - title: ONA API - Setup
     contents:
-    - starts_with("ona")
+    - starts_with("ona_auth")
+    - ona_configure
+
+  - title: ONA API - Data
+    contents:
+    - starts_with("ona_data")
+
+  - title: ONA API - Forms
+    contents:
+      - starts_with("ona_form")
+
+  - title: ONA API - Projects
+    contents:
+      - starts_with("ona_project")
 
   - title: KoBo Toolbox API
     contents:

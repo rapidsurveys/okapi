@@ -41,7 +41,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Get project info</h1>
-    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/ona_projects.R" class="external-link"><code>R/ona_projects.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/ona_project.R" class="external-link"><code>R/ona_project.R</code></a></small>
     <div class="hidden name"><code>ona_project_info.Rd</code></div>
     </div>
 
@@ -73,98 +73,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">ona_project_info</span><span class="op">(</span>project_id <span class="op">=</span> <span class="fl">179619</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $url</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "https://api.ona.io/api/v1/projects/179619"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $projectid</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 179619</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $owner</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "https://api.ona.io/api/v1/users/ernestguevarra"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $created_by</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "https://api.ona.io/api/v1/users/ernestguevarra"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $metadata</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $metadata$description</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Default Project"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $starred</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $users</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   is_org metadata.zebra.tos-pp.2018-03-30.date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  FALSE              2018-06-02T18:56:14.817Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2  FALSE              2020-09-17T11:52:25.034Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.tos-pp.2018-03-30.accepted metadata.zebra.tos-pp.nil.date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                      TRUE                           &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                      TRUE       2021-01-07T09:43:19.973Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.tos-pp.nil.accepted metadata.zebra.eu-citizen-consent.date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                 NA               2018-08-07T11:10:09.652Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                               TRUE               2020-09-17T11:52:23.960Z</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.eu-citizen-consent.eu-citizen-data</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                             FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                             FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.hide-home-walkthrough?</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                  TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                  TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.hide-data-view-walkthrough?</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                       TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                       TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.hide-share-modal-walkthrough?</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                         TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                         TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   metadata.zebra.hide-project-view-walkthrough? metadata.is_email_verified</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                          TRUE                      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                          TRUE                       TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                                 metadata.avatar-url</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                                                              &lt;NA&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 https://images.ona.io/image/a9af299945734cfb9d5869bc7c3eaca8/Guevarra Photo 2.jpg</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   first_name last_name           user     role</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      Valid               validtrial readonly</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     Ernest  Guevarra ernestguevarra    owner</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $forms</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 name formid          id_string num_of_submissions downloadable</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Appearance Widgets 652741 appearance_widgets                  0         TRUE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   encrypted published_by_formbuilder last_submission_time</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     FALSE                       NA                   NA</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                       date_created                                    url</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2022-02-26T17:19:18.835107-05:00 https://api.ona.io/api/v1/forms/652741</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    last_updated_at is_merged_dataset</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 2022-02-26T17:19:19.123932-05:00             FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $public</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $tags</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> list()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $num_datasets</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] 1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $last_submission_date</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $teams</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> list()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $data_views</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> list()</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $name</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "ernestguevarra's Project"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $date_created</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2022-02-26T17:19:17.929848-05:00"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $date_modified</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "2022-02-26T17:19:19.120641-05:00"</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $deleted_at</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">ona_project_info</span><span class="op">(</span>project_id <span class="op">=</span> <span class="fl">12345</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $detail</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "Not found."</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 </code></pre></div>
