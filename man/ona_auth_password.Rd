@@ -18,7 +18,7 @@ System environment variables for ONA_USERNAME and ONA_PASSWORD
 Basic authentication to ONA with a username and password
 }
 \examples{
-ona_auth_password(username = "validtrial",
+ona_auth_password(username = Sys.getenv("ONA_USERNAME"),
                   password = Sys.getenv("ONA_PASSWORD"))
 
 }
