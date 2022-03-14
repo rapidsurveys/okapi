@@ -59,12 +59,19 @@ ona_form_list <- function(base_url = "https://api.ona.io",
 #' @return A published form on ONA.
 #'
 #' @examples
+#' project_list <- ona_project_list()
+#' if ("test" %in% project_list$name) {
+#'   project_id = project_list$id[project_list$name == "test"]
+#'   ona_project_delete(project_id = project_id)
+#' }
 #' ona_project_register(name = "test")
+#' project_list <- ona_project_list()
+#' project_id = project_list$id[project_list$name == "test"]
 #' ona_form_publish(
 #'   xls_file = system.file(
 #'     "appearance_widgets.xlsx", package = "okapi"
 #'   ),
-#'   project_id = ona_project_list()[["projectid"]]
+#'   project_id = project_id
 #' )
 #'
 #' @export
