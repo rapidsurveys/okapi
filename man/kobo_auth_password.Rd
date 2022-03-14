@@ -19,7 +19,7 @@ System environment variables for KOBO_KF_USERNAME and KOBO_KF_PASSWORD
 Basic authentication to KoBo Toolbox with a username and password
 }
 \examples{
-kobo_auth_password(username = "ernestguevarra",
-                   password = "apadana447*")
+kobo_auth_password(username = Sys.getenv("KOBO_USERNAME"),
+                   password = Sys.getenv("KOBO_PASSWORD"))
 
 }

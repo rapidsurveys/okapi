@@ -10,8 +10,8 @@
 #' @return System environment variables for KOBO_KF_USERNAME and KOBO_KF_PASSWORD
 #'
 #' @examples
-#' kobo_auth_password(username = "ernestguevarra",
-#'                    password = "apadana447*")
+#' kobo_auth_password(username = Sys.getenv("KOBO_USERNAME"),
+#'                    password = Sys.getenv("KOBO_PASSWORD"))
 #'
 #' @export
 #'
@@ -34,7 +34,7 @@ kobo_auth_password <- function(username, password = askpass::askpass()) {
 #' @return System environment variables for KOBO_KF_TOKEN
 #'
 #' @examples
-#' kobo_auth_token(token = "e9b39da128ff1b0bd4366b015c9e8ebad35b5fea")
+#' kobo_auth_token(token = Sys.getenv("KOBO_TOKEN"))
 #'
 #' @export
 #'
@@ -58,7 +58,7 @@ kobo_auth_token <- function(token) {
 #' @return A list of assets available to specific user.
 #'
 #' @examples
-#' kobo_auth_token(token = "e9b39da128ff1b0bd4366b015c9e8ebad35b5fea")
+#' kobo_auth_token(token = Sys.getenv("KOBO_TOKEN"))
 #' kobo_list_assets()
 #'
 #' @export
@@ -71,23 +71,27 @@ kobo_list_assets <- function(base_url = "https://kf.kobotoolbox.org",
                              auth_mode = "token") {
   ##
   if (auth_mode == "password") {
-    config <- httr::authenticate(user = Sys.getenv(x = "KOBO_USERNAME"),
-                                 password = Sys.getenv(x = "KOBO_PASSWORD"))
+    config <- httr::authenticate(
+      user = Sys.getenv(x = "KOBO_USERNAME"),
+      password = Sys.getenv(x = "KOBO_PASSWORD")
+    )
   } else {
-    config <- httr::add_headers("Authorization" = paste("Token",
-                                                        Sys.getenv(x = "KOBO_TOKEN"),
-                                                        sep = " "))
+    config <- httr::add_headers(
+      "Authorization" = paste("Token", Sys.getenv(x = "KOBO_TOKEN"), sep = " ")
+    )
   }
 
   ##
-  resp <- httr::GET(url = base_url,
-                    path = "api/v2/assets/",
-                    config = config)
+  resp <- httr::GET(
+    url = base_url,
+    path = "api/v2/assets/",
+    config = config
+  )
 
   ##
-  x <- jsonlite::fromJSON(txt = httr::content(x = resp,
-                                              as = "text",
-                                              encoding = "UTF-8"))
+  x <- jsonlite::fromJSON(
+    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+  )
 
   ##
   x <- tibble::tibble(x$results)
@@ -109,7 +113,7 @@ kobo_list_assets <- function(base_url = "https://kf.kobotoolbox.org",
 #' @return A tibble of datasets available to specific user.
 #'
 #' @examples
-#' kobo_auth_token(token = "e9b39da128ff1b0bd4366b015c9e8ebad35b5fea")
+#' kobo_auth_token(token = Sys.getenv("KOBO_TOKEN"))
 #' kobo_get_data(asset_id = "aKJTpKiVUcPYim2epKkPvW")
 #'
 #' @export
@@ -123,23 +127,27 @@ kobo_get_data <- function(base_url = "https://kf.kobotoolbox.org",
                           asset_id) {
   ##
   if (auth_mode == "password") {
-    config <- httr::authenticate(user = Sys.getenv(x = "KOBO_USERNAME"),
-                                 password = Sys.getenv(x = "KOBO_PASSWORD"))
+    config <- httr::authenticate(
+      user = Sys.getenv(x = "KOBO_USERNAME"),
+      password = Sys.getenv(x = "KOBO_PASSWORD")
+    )
   } else {
-    config <- httr::add_headers("Authorization" = paste("Token",
-                                                        Sys.getenv(x = "KOBO_TOKEN"),
-                                                        sep = " "))
+    config <- httr::add_headers(
+      "Authorization" = paste("Token", Sys.getenv(x = "KOBO_TOKEN"), sep = " ")
+    )
   }
 
   ##
-  resp <- httr::GET(url = base_url,
-                    path = paste("api/v2/assets", asset_id, "data/", sep = "/"),
-                    config = config)
+  resp <- httr::GET(
+    url = base_url,
+    path = paste("api/v2/assets", asset_id, "data/", sep = "/"),
+    config = config
+  )
 
   ##
-  x <- jsonlite::fromJSON(txt = httr::content(x = resp,
-                                              as = "text",
-                                              encoding = "UTF-8"))
+  x <- jsonlite::fromJSON(
+    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+  )
 
   ##
   x <- tibble::tibble(x)
@@ -147,3 +155,4 @@ kobo_get_data <- function(base_url = "https://kf.kobotoolbox.org",
   ##
   return(x)
 }
+
