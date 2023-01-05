@@ -2,7 +2,7 @@ Package: okapi
 Type: Package
 Title: Open Data Kit (ODK)-based Computer-assisted Personal Interviewing (CAPI) 
   Tools
-Version: 0.1.0
+Version: 0.1.0.9000
 Authors@R: person(given = "Ernest", 
                   family = "Guevarra", 
                   comment = c(ORCID = "0000-0002-4887-4415"), 
@@ -25,7 +25,7 @@ Suggests:
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Roxygeon: list(markdown = TRUE)
 URL: https://rapidsurveys.io/okapi/, https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues
