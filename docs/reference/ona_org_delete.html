@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -50,38 +50,56 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">ona_org_delete</span><span class="op">(</span>
-  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,
-  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,
-  <span class="va">org</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">ona_org_delete</span><span class="op">(</span></span>
+<span>  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,</span>
+<span>  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,</span>
+<span>  <span class="va">org</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>ONA URL. Default is <a href="https://api.ona.io" class="external-link">https://api.ona.io</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
+
 <dt>org</dt>
 <dd><p>Organisation short name or username.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Delete specified organisation from specific ONA account.</p>
+    
+
+<p>Delete specified organisation from specific ONA account.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="va">org_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="ona_org_list.html">ona_org_list</a></span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">org_name</span> <span class="op">&lt;-</span> <span class="va">org_list</span><span class="op">[[</span><span class="st">"org"</span><span class="op">]</span><span class="op">]</span></span>
-<span class="r-in"><span class="fu">ona_org_delete</span><span class="op">(</span>org <span class="op">=</span> <span class="va">org_name</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Response [https://api.ona.io/api/v1/orgs/okapi_organisation]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Date: 2022-02-28 05:17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Status: 204</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   Content-Type: &lt;unknown&gt;</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;EMPTY BODY&gt;</span>
-<span class="r-in"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">org_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="ona_org_list.html">ona_org_list</a></span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">org_name</span> <span class="op">&lt;-</span> <span class="va">org_list</span><span class="op">[[</span><span class="st">"org"</span><span class="op">]</span><span class="op">]</span></span></span>
+<span class="r-in"><span><span class="fu">ona_org_delete</span><span class="op">(</span>org <span class="op">=</span> <span class="va">org_name</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Response [https://api.ona.io/api/v1/orgs/helpage/api/v1/orgs/omneohealth/api/v1/orgs/ihtm/api/v1/orgs/katilingban]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Date: 2023-10-21 06:49</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Status: 404</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Content-Type: text/html; charset=utf-8</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Size: 4.58 kB</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;!DOCTYPE html&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> &lt;html lang="en"&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   &lt;head&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     &lt;meta charset="utf-8"&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     &lt;title&gt;api.ona.io&lt;/title&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     &lt;meta name="description" content="Mobile data collection made easy. formh...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     &lt;meta name="author" content=""&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     &lt;meta name="google-site-verification" content="H0JRFrqLHnVfHuZaHRfz1Gmc5f...</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ...</span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -96,7 +114,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

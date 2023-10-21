@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -50,46 +50,58 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">ona_project_register</span><span class="op">(</span>
-  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,
-  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,
-  owner <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"ONA_USERNAME"</span><span class="op">)</span>,
-  name <span class="op">=</span> <span class="cn">NULL</span>,
-  public <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">ona_project_register</span><span class="op">(</span></span>
+<span>  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,</span>
+<span>  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,</span>
+<span>  owner <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"ONA_USERNAME"</span><span class="op">)</span>,</span>
+<span>  name <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  public <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>ONA URL. Default is <a href="https://api.ona.io" class="external-link">https://api.ona.io</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
+
 <dt>owner</dt>
 <dd><p>Username or organisation name creating the project. Default to
 username of currently authenticated account
 (via `Sys.getenv(ONA_USERNAME)`). If organisation name, should be
 an organisation to which currently authenticated account is the owner or
 admin user.</p></dd>
+
+
 <dt>name</dt>
 <dd><p>Name of the project. If NULL (default), project is given a
 default name similar to that created by ONA for forms published without
 a project</p></dd>
+
+
 <dt>public</dt>
 <dd><p>Logical. Should the project be public? Default to TRUE.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Invisible. Project registered and created in ONA account</p>
+    
+
+<p>Invisible. Project registered and created in ONA account</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">ona_project_register</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> $owner</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "You do not have permission to create a project in the organization validtrial."</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">ona_project_register</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Specified project name already in use in the ernestguevarra ONA account. Try a different project name.</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> $non_field_errors</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "The fields name, owner must make a unique set."</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -104,7 +116,7 @@ a project</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

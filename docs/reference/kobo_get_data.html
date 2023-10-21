@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -41,7 +41,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Retrieve specific dataset by form ID from specific user</h1>
-    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/kobo.R" class="external-link"><code>R/kobo.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/kobo_authentication.R" class="external-link"><code>R/kobo_authentication.R</code></a></small>
     <div class="hidden name"><code>kobo_get_data.Rd</code></div>
     </div>
 
@@ -50,39 +50,43 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">kobo_get_data</span><span class="op">(</span>
-  base_url <span class="op">=</span> <span class="st">"https://kf.kobotoolbox.org"</span>,
-  auth_mode <span class="op">=</span> <span class="st">"token"</span>,
-  <span class="va">asset_id</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">kobo_get_data</span><span class="op">(</span></span>
+<span>  base_url <span class="op">=</span> <span class="st">"https://kf.kobotoolbox.org"</span>,</span>
+<span>  auth_mode <span class="op">=</span> <span class="st">"token"</span>,</span>
+<span>  <span class="va">asset_id</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>KoBo Toolbox URL. Default is <a href="https://kf.kobotoolbox.org" class="external-link">https://kf.kobotoolbox.org</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
+
 <dt>asset_id</dt>
 <dd><p>Unique asset identifier.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A tibble of datasets available to specific user.</p>
+    
+
+<p>A tibble of datasets available to specific user.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="kobo_auth_token.html">kobo_auth_token</a></span><span class="op">(</span>token <span class="op">=</span> <span class="st">"e9b39da128ff1b0bd4366b015c9e8ebad35b5fea"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu">kobo_get_data</span><span class="op">(</span>asset_id <span class="op">=</span> <span class="st">"aKJTpKiVUcPYim2epKkPvW"</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 1</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   x            </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;named list&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> <span style="color: #949494;">&lt;int [1]&gt;</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> <span style="color: #949494;">&lt;NULL&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> <span style="color: #949494;">&lt;NULL&gt;</span>       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> <span style="color: #949494;">&lt;df [1 × 22]&gt;</span></span>
-<span class="r-in"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="kobo_auth_token.html">kobo_auth_token</a></span><span class="op">(</span>token <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"KOBO_TOKEN"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">kobo_get_data</span><span class="op">(</span>asset_id <span class="op">=</span> <span class="st">"aKJTpKiVUcPYim2epKkPvW"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 1 × 1</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   x           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;named list&gt;</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> <span style="color: #949494;">&lt;chr [1]&gt;</span>   </span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -97,7 +101,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
