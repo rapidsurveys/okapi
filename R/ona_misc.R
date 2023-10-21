@@ -7,6 +7,8 @@
 #'
 #' @return An object of class request for HTTP requests
 #'
+#' @export
+#'
 #
 ################################################################################
 

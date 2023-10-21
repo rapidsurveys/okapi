@@ -18,14 +18,15 @@ License: GPL-3
 Imports: 
     httr,
     tibble,
-    jsonlite
+    jsonlite,
+    askpass
 Suggests: 
     spelling,
     covr
 Encoding: UTF-8
 Language: en-GB
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 Roxygeon: list(markdown = TRUE)
 URL: https://rapidsurveys.io/okapi/, https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues

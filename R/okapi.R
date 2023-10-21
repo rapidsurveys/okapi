@@ -16,6 +16,8 @@
 #' @importFrom httr GET authenticate add_headers
 #' @importFrom tibble tibble
 #' @importFrom jsonlite fromJSON
+#' @importFrom askpass askpass
+#'
 #'
 #
 ################################################################################
