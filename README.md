@@ -5,12 +5,15 @@
 
 <!-- badges: start -->
 
+[![Project Status: WIP – Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![R-CMD-check](https://github.com/rapidsurveys/okapi/workflows/R-CMD-check/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
+[![R-CMD-check](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/master/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=master)
+coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/main/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
 <!-- badges: end -->
 
@@ -22,8 +25,6 @@ package provides interface functions to CAPI systems based on the [Open
 Data Kit or ODK](https://getodk.org) technology.
 
 ## Motivation and development history
-
-## What does `okapi` do?
 
 ## The ODK ecosystem
 
@@ -46,8 +47,7 @@ current set of functions perform the following tasks:
 
 <!---
 You can install `okapi` from [CRAN](https://cran.r-project.org):
-
-
+&#10;
 ```r
 install.packages("okapi")
 ```
@@ -62,6 +62,30 @@ remotes::install_github("rapidsurveys/okapi")
 ```
 
 ## Usage
+
+## Citation
+
+If you find the `okapi` package useful, please cite using the suggested
+citation provided by a call to the `citation` function as follows:
+
+``` r
+citation("okapi")
+#> To cite okapi in publications use:
+#> 
+#>   Ernest Guevarra (2023). okapi: Open Data Kit (ODK)-based
+#>   Computer-assisted Personal Interview (CAPI) Tools R package version
+#>   0.1.0.9000 URL https://rapidsurveys.io/okapi/
+#> 
+#> A BibTeX entry for LaTeX users is
+#> 
+#>   @Manual{,
+#>     title = {okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools},
+#>     author = {{Ernest Guevarra}},
+#>     year = {2023},
+#>     note = {R package version 0.1.0.9000},
+#>     url = {https://rapidsurveys.io/okapi/},
+#>   }
+```
 
 ## Community guidelines
 
