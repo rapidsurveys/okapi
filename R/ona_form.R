@@ -30,7 +30,7 @@ ona_form_list <- function(base_url = "https://api.ona.io",
 
   ## Read JSON
   x <- jsonlite::fromJSON(
-    txt = httr::content(x = resp, as = "text", encoding = "UTF-8")
+    txt = httr::content(x = resp, as = "text")
   )
 
   ## Convert output to tibble
