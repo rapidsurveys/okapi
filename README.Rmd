@@ -42,19 +42,18 @@ Currently, `okapi` provides functions to interface with two ODK-based systems: [
 
 ## Installation
 
-<!---
-You can install `okapi` from [CRAN](https://cran.r-project.org):
+`okapi` is not yet available on [CRAN](https://cran.r-project.org).
 
-```{r install_cran, eval = FALSE}
-install.packages("okapi")
-```
---->
+You can install `okapi` from the [RapidSurveys R Universe](https://rapidsurveys.r-universe.dev) with:
 
-You can install the development version of `okapi` from [GitHub](https://github.com/rapidsurveys/okapi) with:
-
-```{r install_github, eval = FALSE}
-if(!require(remotes)) install.packages("remotes")
-remotes::install_github("rapidsurveys/okapi")
+```{r install, echo = TRUE, eval = FALSE}
+install.packages(
+  "okapi", 
+  repos = c(
+    'https://rapidsurveys.r-universe.dev', 
+    'https://cloud.r-project.org'
+  )
+)
 ```
 
 ## Usage

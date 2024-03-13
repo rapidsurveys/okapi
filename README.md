@@ -45,20 +45,19 @@ current set of functions perform the following tasks:
 
 ## Installation
 
-<!---
-You can install `okapi` from [CRAN](https://cran.r-project.org):
-&#10;
-```r
-install.packages("okapi")
-```
---->
+`okapi` is not yet available on [CRAN](https://cran.r-project.org).
 
-You can install the development version of `okapi` from
-[GitHub](https://github.com/rapidsurveys/okapi) with:
+You can install `okapi` from the [RapidSurveys R
+Universe](https://rapidsurveys.r-universe.dev) with:
 
 ``` r
-if(!require(remotes)) install.packages("remotes")
-remotes::install_github("rapidsurveys/okapi")
+install.packages(
+  "okapi", 
+  repos = c(
+    'https://rapidsurveys.r-universe.dev', 
+    'https://cloud.r-project.org'
+  )
+)
 ```
 
 ## Usage
