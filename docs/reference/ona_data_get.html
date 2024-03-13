@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -50,45 +50,52 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">ona_data_get</span><span class="op">(</span>
-  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,
-  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,
-  <span class="va">form_id</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">ona_data_get</span><span class="op">(</span></span>
+<span>  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,</span>
+<span>  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>,</span>
+<span>  <span class="va">form_id</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>ONA URL. Default is <a href="https://api.ona.io" class="external-link">https://api.ona.io</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
+
 <dt>form_id</dt>
 <dd><p>Form identifier.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A tibble of retrieved dataset.</p>
+    
+
+<p>A tibble of retrieved dataset.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">ona_data_get</span><span class="op">(</span>form_id <span class="op">=</span> <span class="fl">276175</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">ona_data_get</span><span class="op">(</span>form_id <span class="op">=</span> <span class="fl">276175</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 31</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      `_id` `_tags` `_uuid`   `_notes` `_edited` `_status` `_version` `_duration`</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 24<span style="text-decoration: underline;">339</span>185 &lt;list&gt;  fcc6fe74… &lt;list&gt;   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 24<span style="text-decoration: underline;">339</span>187 &lt;list&gt;  9d71537b… &lt;list&gt;   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 26<span style="text-decoration: underline;">371</span>042 &lt;list&gt;  a32ee359… &lt;list&gt;   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 26<span style="text-decoration: underline;">371</span>044 &lt;list&gt;  2c5eaa35… &lt;list&gt;   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 23 more variables: `_xform_id` &lt;int&gt;, `_attachments` &lt;list&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> 24<span style="text-decoration: underline;">339</span>185 <span style="color: #949494;">&lt;list&gt;</span>  fcc6fe74… <span style="color: #949494;">&lt;list&gt;</span>   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> 24<span style="text-decoration: underline;">339</span>187 <span style="color: #949494;">&lt;list&gt;</span>  9d71537b… <span style="color: #949494;">&lt;list&gt;</span>   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> 26<span style="text-decoration: underline;">371</span>042 <span style="color: #949494;">&lt;list&gt;</span>  a32ee359… <span style="color: #949494;">&lt;list&gt;</span>   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> 26<span style="text-decoration: underline;">371</span>044 <span style="color: #949494;">&lt;list&gt;</span>  2c5eaa35… <span style="color: #949494;">&lt;list&gt;</span>   FALSE     submitte… 201801220… <span style="color: #949494;">""</span>         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 23 more variables: `_xform_id` &lt;int&gt;, `_attachments` &lt;list&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `_geolocation` &lt;list&gt;, `_media_count` &lt;int&gt;, `_total_media` &lt;int&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `final/fbmam5` &lt;chr&gt;, `formhub/uuid` &lt;chr&gt;, `_submitted_by` &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `group2/fbmam1` &lt;chr&gt;, `intro1/intro2` &lt;chr&gt;, `group1/position` &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `group1/workshop` &lt;chr&gt;, `meta/instanceID` &lt;chr&gt;, `_submission_time` &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `_xform_id_string` &lt;chr&gt;, `_bamboo_dataset_id` &lt;chr&gt;,</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   `_media_all_received` &lt;lgl&gt;, `group1/organisation` &lt;chr&gt;, …</span></span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -103,7 +110,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

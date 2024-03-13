@@ -2,8 +2,8 @@
 % Please edit documentation in R/okapi.R
 \docType{package}
 \name{okapi}
-\alias{okapi}
 \alias{okapi-package}
+\alias{okapi}
 \title{Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools}
 \description{
 Data collection using computer-assisted personal interviewing or CAPI tools
@@ -16,8 +16,7 @@ technology.
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://rapidsurveys.io/okapi/}
-  \item \url{https://github.com/rapidsurveys/okapi}
+  \item \url{https://rapidsurveys.io/okapi/,https://github.com/rapidsurveys/okapi}
   \item Report bugs at \url{https://github.com/rapidsurveys/okapi/issues}
 }
 

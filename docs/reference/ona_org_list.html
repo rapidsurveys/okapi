@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -50,30 +50,43 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">ona_org_list</span><span class="op">(</span>
-  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,
-  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">ona_org_list</span><span class="op">(</span></span>
+<span>  base_url <span class="op">=</span> <span class="st">"https://api.ona.io"</span>,</span>
+<span>  auth_mode <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"token"</span>, <span class="st">"password"</span><span class="op">)</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>ONA URL. Default is <a href="https://api.ona.io" class="external-link">https://api.ona.io</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A tibble of organisations.</p>
+    
+
+<p>A tibble of organisations.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu">ona_org_list</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 0 × 1</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 1 variable: x &lt;list&gt;</span></span>
-<span class="r-in"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">ona_org_list</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4 × 17</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   url   enabled_features org   user  creator users name  city  country home_page</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;list&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;lis&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">1</span> http… <span style="color: #949494;">&lt;list [0]&gt;</span>       help… http… https:… <span style="color: #949494;">&lt;df&gt;</span>  Help… <span style="color: #949494;">"</span>Wor… <span style="color: #949494;">""</span>      <span style="color: #949494;">""</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">2</span> http… <span style="color: #949494;">&lt;list [0]&gt;</span>       omne… http… https:… <span style="color: #949494;">&lt;df&gt;</span>  OMNe… <span style="color: #949494;">"</span>Oxf… <span style="color: #949494;">""</span>      <span style="color: #949494;">""</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">3</span> http… <span style="color: #949494;">&lt;list [0]&gt;</span>       ihtm  http… https:… <span style="color: #949494;">&lt;df&gt;</span>  Oxfo… <span style="color: #949494;">""</span>    <span style="color: #949494;">""</span>      <span style="color: #949494;">""</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">4</span> http… <span style="color: #949494;">&lt;list [0]&gt;</span>       kati… http… https:… <span style="color: #949494;">&lt;df&gt;</span>  Kati… <span style="color: #949494;">""</span>    <span style="color: #949494;">""</span>      <span style="color: #949494;">""</span>       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 7 more variables: twitter &lt;chr&gt;, description &lt;chr&gt;, require_auth &lt;lgl&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   address &lt;chr&gt;, phonenumber &lt;chr&gt;, num_of_submissions &lt;int&gt;,</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   date_modified &lt;chr&gt;</span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -88,7 +101,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>

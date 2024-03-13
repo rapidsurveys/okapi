@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">okapi</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0.9000</span>
       </span>
     </div>
 
@@ -41,7 +41,7 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Retrieve list of assets available to specific user</h1>
-    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/kobo.R" class="external-link"><code>R/kobo.R</code></a></small>
+    <small class="dont-index">Source: <a href="https://github.com/rapidsurveys/okapi/blob/HEAD/R/kobo_authentication.R" class="external-link"><code>R/kobo_authentication.R</code></a></small>
     <div class="hidden name"><code>kobo_list_assets.Rd</code></div>
     </div>
 
@@ -50,46 +50,32 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">kobo_list_assets</span><span class="op">(</span>base_url <span class="op">=</span> <span class="st">"https://kf.kobotoolbox.org"</span>, auth_mode <span class="op">=</span> <span class="st">"token"</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">kobo_list_assets</span><span class="op">(</span>base_url <span class="op">=</span> <span class="st">"https://kf.kobotoolbox.org"</span>, auth_mode <span class="op">=</span> <span class="st">"token"</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>base_url</dt>
 <dd><p>KoBo Toolbox URL. Default is <a href="https://kf.kobotoolbox.org" class="external-link">https://kf.kobotoolbox.org</a>.</p></dd>
+
+
 <dt>auth_mode</dt>
 <dd><p>Password or token? Default is token.</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A list of assets available to specific user.</p>
+    
+
+<p>A list of assets available to specific user.</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="kobo_auth_token.html">kobo_auth_token</a></span><span class="op">(</span>token <span class="op">=</span> <span class="st">"e9b39da128ff1b0bd4366b015c9e8ebad35b5fea"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu">kobo_list_assets</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 28 × 28</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    url       date_modified date_created owner summary$geo owner__username parent</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>     <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>         <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>        <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;lgl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>           <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 1</span> https://… 2016-02-19T1… 2014-12-17T… http… <span style="color: #BB0000;">NA</span>          ernestguevarra  <span style="color: #BB0000;">NA</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 2</span> https://… 2014-12-31T0… 2014-12-29T… http… FALSE       ernestguevarra  <span style="color: #BB0000;">NA</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 3</span> https://… 2014-12-31T0… 2014-12-28T… http… FALSE       ernestguevarra  <span style="color: #BB0000;">NA</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 4</span> https://… 2014-12-29T1… 2014-12-29T… http… FALSE       ernestguevarra  <span style="color: #BB0000;">NA</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 5</span> https://… 2014-12-28T2… 2014-12-22T… http… FALSE       ernestguevarra  <span style="color: #BB0000;">NA</span>    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 6</span> https://… 2014-12-23T0… 2014-12-22T… http… FALSE       ernestguevarra  https…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 7</span> https://… 2014-12-22T0… 2014-12-22T… http… FALSE       ernestguevarra  https…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> https://… 2014-12-22T0… 2014-12-22T… http… FALSE       ernestguevarra  https…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> https://… 2014-12-22T0… 2014-12-22T… http… FALSE       ernestguevarra  https…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> https://… 2014-12-22T0… 2014-12-22T… http… FALSE       ernestguevarra  https…</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># … with 18 more rows, and 26 more variables: summary$labels &lt;list&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   $columns &lt;list&gt;, $languages &lt;list&gt;, $row_count &lt;int&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   $default_translation &lt;lgl&gt;, uid &lt;chr&gt;, tag_string &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   settings &lt;named list&gt;, kind &lt;chr&gt;, name &lt;chr&gt;, asset_type &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   version_id &lt;chr&gt;, has_deployment &lt;lgl&gt;, deployed_version_id &lt;chr&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   deployment__identifier &lt;chr&gt;, deployment__active &lt;lgl&gt;,</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;">#   deployment__submission_count &lt;int&gt;, permissions &lt;list&gt;, …</span></span>
-<span class="r-in"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="kobo_auth_token.html">kobo_auth_token</a></span><span class="op">(</span>token <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="st">"KOBO_TOKEN"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu">kobo_list_assets</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 0 × 0</span></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -104,7 +90,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
