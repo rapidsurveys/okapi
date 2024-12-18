@@ -28,9 +28,9 @@ Data Kit or ODK](https://getodk.org) technology.
 
 ## The ODK ecosystem
 
-## What does `okapi` do?
+## What does the package do?
 
-Currently, `okapi` provides functions to interface with two ODK-based
+Currently, `{okapi}` provides functions to interface with two ODK-based
 systems: [ONA](https://getodk.org) and
 [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The
 current set of functions perform the following tasks:
@@ -45,7 +45,7 @@ current set of functions perform the following tasks:
 
 ## Installation
 
-`okapi` is not yet available on [CRAN](https://cran.r-project.org).
+`{okapi}` is not yet available on [CRAN](https://cran.r-project.org).
 
 You can install `okapi` from the [RapidSurveys R
 Universe](https://rapidsurveys.r-universe.dev) with:
@@ -64,7 +64,7 @@ install.packages(
 
 ## Citation
 
-If you find the `okapi` package useful, please cite using the suggested
+If you use `{okapi}` in your work, please cite using the suggested
 citation provided by a call to the `citation` function as follows:
 
 ``` r
@@ -72,8 +72,8 @@ citation("okapi")
 #> To cite okapi in publications use:
 #> 
 #>   Ernest Guevarra (2023). okapi: Open Data Kit (ODK)-based
-#>   Computer-assisted Personal Interview (CAPI) Tools R package version
-#>   0.1.0.9000 URL https://rapidsurveys.io/okapi/
+#>   Computer-assisted Personal Interview (CAPI) Tools R package
+#>   version 0.1.0.9000 URL https://rapidsurveys.io/okapi/
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 

@@ -30,9 +30,9 @@ Data collection using computer-assisted personal interviewing or CAPI tools is n
 
 ## The ODK ecosystem
 
-## What does `okapi` do?
+## What does the package do?
 
-Currently, `okapi` provides functions to interface with two ODK-based systems: [ONA](https://getodk.org) and [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The current set of functions perform the following tasks:
+Currently, `{okapi}` provides functions to interface with two ODK-based systems: [ONA](https://getodk.org) and [KoboToolbox](https://kobotoolbox.org) via their respective APIs. The current set of functions perform the following tasks:
 
 1. Authenticate with the respective servers using either an account password or an API token;
 
@@ -42,7 +42,7 @@ Currently, `okapi` provides functions to interface with two ODK-based systems: [
 
 ## Installation
 
-`okapi` is not yet available on [CRAN](https://cran.r-project.org).
+`{okapi}` is not yet available on [CRAN](https://cran.r-project.org).
 
 You can install `okapi` from the [RapidSurveys R Universe](https://rapidsurveys.r-universe.dev) with:
 
@@ -60,7 +60,7 @@ install.packages(
 
 ## Citation
 
-If you find the `okapi` package useful, please cite using the suggested citation provided by a call to the `citation` function as follows:
+If you use `{okapi}` in your work, please cite using the suggested citation provided by a call to the `citation` function as follows:
 
 ```{r cite}
 citation("okapi")
