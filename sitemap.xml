@@ -1,87 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rapidsurveys.io/okapi/404.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/CONTRIBUTING.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/kobo_auth_password.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/kobo_auth_token.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/kobo_get_data.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/kobo_list_assets.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/okapi.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_auth_password.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_auth_token.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_configure.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_data_get.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_data_list.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_form_delete.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_form_list.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_form_publish.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_org_delete.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_org_list.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_org_register.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_project_delete.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_project_info.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_project_list.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_project_register.html</loc>
-  </url>
-  <url>
-    <loc>https://rapidsurveys.io/okapi/reference/ona_project_share.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://rapidsurveys.io/okapi/404.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/CONTRIBUTING.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/LICENSE.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/authors.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/index.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/index.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/kobo_auth_password.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/kobo_auth_token.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/kobo_get_data.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/kobo_list_assets.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/okapi.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_auth_password.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_auth_token.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_configure.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_data_get.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_data_list.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_form_delete.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_form_list.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_form_publish.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_org_delete.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_org_list.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_org_register.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_project_delete.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_project_info.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_project_list.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_project_register.html</loc></url>
+<url><loc>https://rapidsurveys.io/okapi/reference/ona_project_share.html</loc></url>
 </urlset>
+
