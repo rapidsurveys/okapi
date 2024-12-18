@@ -5,12 +5,11 @@ url: https://rapidsurveys.io/okapi
 template:
   bootstrap: 5
   bootswatch: united
-  theme: haddock
-  ganalytics:
+  theme: breeze-light
+  ganalytics: "G-VQQX28ZSBV"
 
 navbar:
-  bg: danger
-  type: light
+  bg: dark
   structure:
     left:  [home, intro, reference, articles, news]
     right: [mastodon, linkedin, github]
@@ -21,18 +20,14 @@ navbar:
     #   menu:
     #   - text: "Detecting haemoglobinaemia"
     #     href: articles/haemoglobinaemia.html
-    #   - text: "Detecting inflammation"
-    #     href: articles/inflammation.html
-    #   - text: "Detecting iron deficiency"
-    #     href: articles/iron-deficiency.html
-    #   - text: "Detecting iodine deficiency"
-    #     href: articles/iodine-deficiency.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
       href: https://fosstodon.org/@katilingban
+      aria-label: Mastodon
     linkedin:
       icon: "fab fa-linkedin fa-lg"
       href: https://www.linkedin.com/company/katilingban
+      aria-label: LinkedIn
 
 home:
   links:
@@ -61,15 +56,15 @@ reference:
 
   - title: ONA API - Forms
     contents:
-      - starts_with("ona_form")
+    - starts_with("ona_form")
 
   - title: ONA API - Projects
     contents:
-      - starts_with("ona_project")
+    - starts_with("ona_project")
 
   - title: ONA API - Organisations
     contents:
-      - starts_with("ona_org")
+    - starts_with("ona_org")
 
   - title: KoBo Toolbox API
     contents:
