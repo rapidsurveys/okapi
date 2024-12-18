@@ -2,17 +2,23 @@ title: okapi
 
 url: https://rapidsurveys.io/okapi
 
+development:
+  mode: auto
+
 template:
   bootstrap: 5
-  bootswatch: united
   theme: breeze-light
   ganalytics: "G-VQQX28ZSBV"
+  bslib:
+    bootswatch: sandstone
+    primary: "#A41034"
 
 navbar:
-  bg: dark
+  bg: primary
+  type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [mastodon, linkedin, github]
+    right: [search, mastodon, github]
 
   components:
     # articles:
@@ -24,10 +30,6 @@ navbar:
       icon: "fab fa-mastodon fa-lg"
       href: https://fosstodon.org/@katilingban
       aria-label: Mastodon
-    linkedin:
-      icon: "fab fa-linkedin fa-lg"
-      href: https://www.linkedin.com/company/katilingban
-      aria-label: LinkedIn
 
 home:
   links:
@@ -36,9 +38,6 @@ home:
 
   - text: Read more about ONA
     href: https://ona.io
-
-  - text: Read more about KoboToolbox
-    href: https://www.kobotoolbox.org
 
 reference:
   - title: Description
