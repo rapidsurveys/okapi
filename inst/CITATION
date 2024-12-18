@@ -1,16 +1,10 @@
-citHeader("To cite okapi in publications use:")
-
-citEntry(
-  entry    = "Manual",
+bibentry(
+  bibtype  = "Manual",
+  header   = "To cite okapi in publications use:",
   title    = "okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools",
   author   = person("Ernest Guevarra"),
-  year     = "2023",
-  note     = "R package version 0.1.0.9000",
+  year     = "2024",
+  note     = "R package version 0.0.0.9000",
   url      = "https://rapidsurveys.io/okapi/",
-  textVersion = paste(
-    "Ernest Guevarra (2023).",
-    "okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools",
-    "R package version 0.1.0.9000",
-    "URL https://rapidsurveys.io/okapi/"
-  )
+  doi      = "10.5281/zenodo.206914853",
 )

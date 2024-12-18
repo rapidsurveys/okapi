@@ -5,9 +5,9 @@
 
 <!-- badges: start -->
 
-[![Project Status: WIP – Initial development is in progress, but there
-has not yet been a stable, usable release suitable for the
-public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![R-CMD-check](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml)
@@ -15,25 +15,26 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![Codecov test
 coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/main/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=main)
 [![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
+[![DOI](https://zenodo.org/badge/206914853.svg)](https://zenodo.org/badge/latestdoi/206914853)
 <!-- badges: end -->
 
-Data collection using computer-assisted personal interviewing or CAPI
+Data collection using computer-assisted personal interviewing (CAPI)
 tools is now the standard approach for conducting surveys and studies. A
 wide range of CAPI systems are currently being used. The ability to
 interface with these systems helps in the overall data process. This
 package provides interface functions to CAPI systems based on the [Open
-Data Kit or ODK](https://getodk.org) technology.
+Data Kit (ODK)](https://getodk.org) technology.
 
-## Motivation and development history
+<!-- ## Motivation and development history
 
-## The ODK ecosystem
+## The ODK ecosystem -->
 
 ## What does the package do?
 
-Currently, `{okapi}` provides functions to interface with two ODK-based
-systems: [ONA](https://getodk.org) and
-[KoboToolbox](https://kobotoolbox.org) via their respective APIs. The
-current set of functions perform the following tasks:
+Currently, `{okapi}` provides functions to interface with
+[ONA](https://getodk.org) via its
+[API](https://api.ona.io/static/docs/index.html). The current set of
+functions perform the following tasks:
 
 1.  Authenticate with the respective servers using either an account
     password or an API token;
@@ -45,22 +46,24 @@ current set of functions perform the following tasks:
 
 ## Installation
 
-`{okapi}` is not yet available on [CRAN](https://cran.r-project.org).
-
-You can install `okapi` from the [RapidSurveys R
+`{okapi}` is not yet on [CRAN](https://cran.r-project.org) but can be
+installed from the [RapidSurveys R
 Universe](https://rapidsurveys.r-universe.dev) with:
 
 ``` r
 install.packages(
   "okapi", 
-  repos = c(
-    'https://rapidsurveys.r-universe.dev', 
-    'https://cloud.r-project.org'
-  )
+  repos = c('https://rapidsurveys.r-universe.dev', 'https://cloud.r-project.org')
 )
 ```
 
 ## Usage
+
+### Authentication
+
+### List resources
+
+### Retrieve resources
 
 ## Citation
 
@@ -71,18 +74,21 @@ citation provided by a call to the `citation` function as follows:
 citation("okapi")
 #> To cite okapi in publications use:
 #> 
-#>   Ernest Guevarra (2023). okapi: Open Data Kit (ODK)-based
-#>   Computer-assisted Personal Interview (CAPI) Tools R package
-#>   version 0.1.0.9000 URL https://rapidsurveys.io/okapi/
+#>   Ernest Guevarra (2024). _okapi: Open Data Kit (ODK)-based
+#>   Computer-assisted Personal Interview (CAPI) Tools_.
+#>   doi:10.5281/zenodo.206914853
+#>   <https://doi.org/10.5281/zenodo.206914853>, R package
+#>   version 0.0.0.9000, <https://rapidsurveys.io/okapi/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
 #>     title = {okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools},
 #>     author = {{Ernest Guevarra}},
-#>     year = {2023},
-#>     note = {R package version 0.1.0.9000},
+#>     year = {2024},
+#>     note = {R package version 0.0.0.9000},
 #>     url = {https://rapidsurveys.io/okapi/},
+#>     doi = {10.5281/zenodo.206914853},
 #>   }
 ```
 
