@@ -24,14 +24,14 @@ ona_project_share(
 a form with.}
 
 \item{role}{A character value for the role the user/s will have on the
-project. This can be *readonly*, *dataentry*, *editor*, or *manager*.}
+project. This can be \emph{readonly}, \emph{dataentry}, \emph{editor}, or \emph{manager}.}
 
 \item{email}{Email message to send to user/s to whom project has been
 shared with. If NULL (default), user/s will not be notified.}
 }
 \value{
 Invisible. Project shared with specified users with specified
-  roles. A tibble of project information.
+roles. A tibble of project information.
 }
 \description{
 Share projects with user(s)
