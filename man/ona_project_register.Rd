@@ -19,7 +19,7 @@ ona_project_register(
 
 \item{owner}{Username or organisation name creating the project. Default to
 username of currently authenticated account
-(via `Sys.getenv(ONA_USERNAME)`). If organisation name, should be
+(via \code{Sys.getenv(ONA_USERNAME)}). If organisation name, should be
 an organisation to which currently authenticated account is the owner or
 admin user.}
 

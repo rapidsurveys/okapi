@@ -18,7 +18,7 @@ navbar:
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [search, mastodon, github]
+    right: [search, mastodon, linkedin, github]
 
   components:
     # articles:
@@ -28,8 +28,12 @@ navbar:
     #     href: articles/haemoglobinaemia.html
     mastodon:
       icon: "fab fa-mastodon fa-lg"
-      href: https://fosstodon.org/@katilingban
       aria-label: Mastodon
+      href: https://fosstodon.org/@katilingban
+    linkedin:
+      icon: "fab fa-linkedin fa-lg"
+      aria-label: LinkedIn
+      href: https://www.linkedin.com/company/katilingban
 
 home:
   links:

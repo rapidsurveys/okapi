@@ -27,6 +27,6 @@ Encoding: UTF-8
 Language: en-GB
 LazyData: true
 RoxygenNote: 7.3.2
-Roxygeon: list(markdown = TRUE)
+Roxygen: list(markdown = TRUE)
 URL: https://rapidsurveys.io/okapi/,https://github.com/rapidsurveys/okapi
 BugReports: https://github.com/rapidsurveys/okapi/issues

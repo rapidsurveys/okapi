@@ -48,7 +48,9 @@ Currently, `{okapi}` provides functions to interface with [ONA](https://getodk.o
 ```{r install, echo = TRUE, eval = FALSE}
 install.packages(
   "okapi", 
-  repos = c('https://rapidsurveys.r-universe.dev', 'https://cloud.r-project.org')
+  repos = c(
+    'https://rapidsurveys.r-universe.dev', 'https://cloud.r-project.org'
+  )
 )
 ```
 
