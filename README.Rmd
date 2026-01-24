@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![R-CMD-check](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
-[![Codecov test coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/main/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=main)
+[![Codecov test coverage](https://codecov.io/gh/rapidsurveys/okapi/graph/badge.svg)](https://app.codecov.io/gh/rapidsurveys/okapi)
 [![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
 [![DOI](https://zenodo.org/badge/206914853.svg)](https://zenodo.org/badge/latestdoi/206914853)
 <!-- badges: end -->
@@ -75,3 +75,7 @@ citation("okapi")
 Feedback, bug reports and feature requests are welcome; file issues or seek support [here](https://github.com/rapidsurveys/okapi/issues). If you would like to contribute to the package, please see our [contributing guidelines](https://rapidsurveys.io/okapi/CONTRIBUTING.html).
 
 This project is released with a [Contributor Code of Conduct](https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.
+
+&nbsp;
+
+[![](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)

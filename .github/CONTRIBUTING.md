@@ -8,16 +8,16 @@
 
 * Fork this repository to your Github account
 
-* Clone your version on your account down to your machine from your account 
+* Clone your version to your machine 
 
-```
+```bash
 git clone https://github.com/<yourgithubusername>/okapi.git
 ```
 
 * Make sure to track progress upstream i.e., on our version of `okapi` 
 at `rapidsurveys/okapi`, by doing 
 
-```
+```bash
 git remote add upstream https://github.com/rapidsurveys/okapi.git
 ```
 

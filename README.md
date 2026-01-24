@@ -13,7 +13,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![R-CMD-check](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/rapidsurveys/okapi/actions/workflows/R-CMD-check.yaml)
 [![test-coverage](https://github.com/rapidsurveys/okapi/workflows/test-coverage/badge.svg)](https://github.com/rapidsurveys/okapi/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/rapidsurveys/okapi/branch/main/graph/badge.svg)](https://codecov.io/gh/rapidsurveys/okapi?branch=main)
+coverage](https://codecov.io/gh/rapidsurveys/okapi/graph/badge.svg)](https://app.codecov.io/gh/rapidsurveys/okapi)
 [![CodeFactor](https://www.codefactor.io/repository/github/rapidsurveys/okapi/badge)](https://www.codefactor.io/repository/github/rapidsurveys/okapi)
 [![DOI](https://zenodo.org/badge/206914853.svg)](https://zenodo.org/badge/latestdoi/206914853)
 <!-- badges: end -->
@@ -26,8 +26,7 @@ package provides interface functions to CAPI systems based on the [Open
 Data Kit (ODK)](https://getodk.org) technology.
 
 <!-- ## Motivation and development history
-
-## The ODK ecosystem -->
+&#10;## The ODK ecosystem -->
 
 ## What does the package do?
 
@@ -53,7 +52,9 @@ Universe](https://rapidsurveys.r-universe.dev) with:
 ``` r
 install.packages(
   "okapi", 
-  repos = c('https://rapidsurveys.r-universe.dev', 'https://cloud.r-project.org')
+  repos = c(
+    'https://rapidsurveys.r-universe.dev', 'https://cloud.r-project.org'
+  )
 )
 ```
 
@@ -74,19 +75,19 @@ citation provided by a call to the `citation` function as follows:
 citation("okapi")
 #> To cite okapi in publications use:
 #> 
-#>   Ernest Guevarra (2024). _okapi: Open Data Kit (ODK)-based
+#>   Ernest Guevarra (2026). _okapi: Open Data Kit (ODK)-based
 #>   Computer-assisted Personal Interview (CAPI) Tools_.
 #>   doi:10.5281/zenodo.206914853
-#>   <https://doi.org/10.5281/zenodo.206914853>, R package
-#>   version 0.0.0.9000, <https://rapidsurveys.io/okapi/>.
+#>   <https://doi.org/10.5281/zenodo.206914853>, R package version
+#>   0.1.1.9000, <https://rapidsurveys.io/okapi/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
 #>   @Manual{,
 #>     title = {okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools},
 #>     author = {{Ernest Guevarra}},
-#>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     year = {2026},
+#>     note = {R package version 0.1.1.9000},
 #>     url = {https://rapidsurveys.io/okapi/},
 #>     doi = {10.5281/zenodo.206914853},
 #>   }
@@ -103,3 +104,7 @@ guidelines](https://rapidsurveys.io/okapi/CONTRIBUTING.html).
 This project is released with a [Contributor Code of
 Conduct](https://rapidsurveys.io/okapi/CODE_OF_CONDUCT.html). By
 participating in this project you agree to abide by its terms.
+
+ 
+
+[![](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)
