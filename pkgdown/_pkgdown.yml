@@ -8,17 +8,27 @@ development:
 template:
   bootstrap: 5
   theme: breeze-light
-  ganalytics: "G-VQQX28ZSBV"
   bslib:
     bootswatch: sandstone
     primary: "#A41034"
+  includes:
+    in_header: |
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQQX28ZSBV"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VQQX28ZSBV');
+      </script>
 
 navbar:
   bg: primary
   type: light
   structure:
     left:  [home, intro, reference, articles, news]
-    right: [search, mastodon, linkedin, github]
+    right: [search, github]
 
   components:
     # articles:
@@ -26,14 +36,6 @@ navbar:
     #   menu:
     #   - text: "Detecting haemoglobinaemia"
     #     href: articles/haemoglobinaemia.html
-    mastodon:
-      icon: "fab fa-mastodon fa-lg"
-      aria-label: Mastodon
-      href: https://fosstodon.org/@katilingban
-    linkedin:
-      icon: "fab fa-linkedin fa-lg"
-      aria-label: LinkedIn
-      href: https://www.linkedin.com/company/katilingban
 
 home:
   links:
