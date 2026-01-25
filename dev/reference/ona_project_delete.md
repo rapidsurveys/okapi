@@ -37,7 +37,7 @@ project_list <- ona_project_list()
 project_id <- project_list[["projectid"]]
 ona_project_delete(project_id = project_id)
 #> Response [https://api.ona.io/api/v1/projects/]
-#>   Date: 2026-01-24 23:59
+#>   Date: 2026-01-25 23:36
 #>   Status: 404
 #>   Content-Type: text/html; charset=utf-8
 #>   Size: 4.58 kB

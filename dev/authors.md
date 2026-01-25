@@ -13,13 +13,13 @@ Source:
 Ernest Guevarra (2026). *okapi: Open Data Kit (ODK)-based
 Computer-assisted Personal Interview (CAPI) Tools*.
 [doi:10.5281/zenodo.206914853](https://doi.org/10.5281/zenodo.206914853),
-R package version 0.1.1.9000, <https://rapidsurveys.io/okapi/>.
+R package version 0.1.2, <https://rapidsurveys.io/okapi/>.
 
     @Manual{,
       title = {okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools},
       author = {{Ernest Guevarra}},
       year = {2026},
-      note = {R package version 0.1.1.9000},
+      note = {R package version 0.1.2},
       url = {https://rapidsurveys.io/okapi/},
       doi = {10.5281/zenodo.206914853},
     }
