@@ -78,8 +78,8 @@ citation("okapi")
 #>   Ernest Guevarra (2026). _okapi: Open Data Kit (ODK)-based
 #>   Computer-assisted Personal Interview (CAPI) Tools_.
 #>   doi:10.5281/zenodo.206914853
-#>   <https://doi.org/10.5281/zenodo.206914853>, R package version
-#>   0.1.1.9000, <https://rapidsurveys.io/okapi/>.
+#>   <https://doi.org/10.5281/zenodo.206914853>, R package version 0.1.2,
+#>   <https://rapidsurveys.io/okapi/>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -87,7 +87,7 @@ citation("okapi")
 #>     title = {okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools},
 #>     author = {{Ernest Guevarra}},
 #>     year = {2026},
-#>     note = {R package version 0.1.1.9000},
+#>     note = {R package version 0.1.2},
 #>     url = {https://rapidsurveys.io/okapi/},
 #>     doi = {10.5281/zenodo.206914853},
 #>   }
@@ -107,4 +107,7 @@ participating in this project you agree to abide by its terms.
 
  
 
-[![](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)
+[![This is part of the RapidSurveys project under the Oxford iHealth
+initiative of the MSc in International Health and Tropical Medicine,
+Nuffield Department of Medicine, University of
+Oxford](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)
