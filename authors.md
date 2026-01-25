@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/rapidsurveys/okapi/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/rapidsurveys/okapi/blob/v0.1.2/inst/CITATION)
 
 Ernest Guevarra (2026). *okapi: Open Data Kit (ODK)-based
 Computer-assisted Personal Interview (CAPI) Tools*.
