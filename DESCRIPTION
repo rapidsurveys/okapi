@@ -2,7 +2,7 @@ Package: okapi
 Type: Package
 Title: Open Data Kit (ODK)-based Computer-assisted Personal Interviewing (CAPI) 
   Tools
-Version: 0.1.2
+Version: 0.1.2.9000
 Authors@R: person(given = "Ernest", 
                   family = "Guevarra", 
                   comment = c(ORCID = "0000-0002-4887-4415"), 
