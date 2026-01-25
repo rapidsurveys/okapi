@@ -37,7 +37,7 @@ org_list <- ona_org_list()
 org_name <- org_list[["org"]]
 ona_org_delete(org = org_name)
 #> Response [https://api.ona.io/api/v1/orgs/]
-#>   Date: 2026-01-25 23:00
+#>   Date: 2026-01-25 23:20
 #>   Status: 404
 #>   Content-Type: text/html; charset=utf-8
 #>   Size: 4.58 kB
