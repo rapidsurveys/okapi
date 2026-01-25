@@ -4,7 +4,7 @@ bibentry(
   title    = "okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interview (CAPI) Tools",
   author   = person("Ernest Guevarra"),
   year     = "2026",
-  note     = "R package version 0.1.1.9000",
+  note     = "R package version 0.1.2",
   url      = "https://rapidsurveys.io/okapi/",
   doi      = "10.5281/zenodo.206914853",
 )

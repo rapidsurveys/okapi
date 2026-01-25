@@ -78,4 +78,4 @@ This project is released with a [Contributor Code of Conduct](https://rapidsurve
 
 &nbsp;
 
-[![](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)
+[![This is part of the RapidSurveys project under the Oxford iHealth initiative of the MSc in International Health and Tropical Medicine, Nuffield Department of Medicine, University of Oxford](https://github.com/rapidsurveys/ramOPmanual/blob/main/images/rapidsurveys_footer.png?raw=true)](https://rapidsurveys.io)

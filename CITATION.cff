@@ -9,7 +9,7 @@ type: software
 license: GPL-3.0-only
 title: 'okapi: Open Data Kit (ODK)-based Computer-assisted Personal Interviewing (CAPI)
   Tools'
-version: 0.1.1.9000
+version: 0.1.2
 doi: 10.5281/zenodo.206914853
 abstract: Data collection using computer-assisted personal interviewing or CAPI tools
   is now the standard approach for conducting surveys and studies. A wide range of
@@ -28,7 +28,7 @@ preferred-citation:
   authors:
   - name: Ernest Guevarra
   year: '2026'
-  notes: R package version 0.1.1.9000
+  notes: R package version 0.1.2
   url: https://rapidsurveys.io/okapi/
   doi: 10.5281/zenodo.206914853
 repository-code: https://github.com/rapidsurveys/okapi
